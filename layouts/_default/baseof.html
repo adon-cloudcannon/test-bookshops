@@ -13,6 +13,7 @@
     {{ $scss := $bookshop_scss_files | resources.Concat "css/bookshop.css" | resources.ToCSS | resources.Minify |
     resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $scss.Permalink }}">
+    <link rel="stylesheet" href="css/variables.scss" />
 </head>
 
 <body>
