@@ -2,9 +2,7 @@
 
 npm i
 
-ls -lh node_modules
-ls -lh node_modules/.bin
-ls -lh "node_modules/@bookshop/"
-ls -lh "node_modules/@bookshop/generate/"
+./node_modules/@bookshop/generate/main.js
+./node_modules/.bin/bookshop-generate
 
 npx "@bookshop/generate"
