@@ -2,7 +2,7 @@
 
 npm i
 
-./node_modules/@bookshop/generate/main.js
-./node_modules/.bin/bookshop-generate
+#./node_modules/@bookshop/generate/main.js
+ls -l ./node_modules/.bin/bookshop-generate
 
 npx "@bookshop/generate"
