@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 
 npm i
+
+ls -lh node_modules
+ls -lh node_modules/.bin
+ls -lh "node_modules/@bookshop/"
+ls -lh "node_modules/@bookshop/generate/"
+
 npx "@bookshop/generate"
