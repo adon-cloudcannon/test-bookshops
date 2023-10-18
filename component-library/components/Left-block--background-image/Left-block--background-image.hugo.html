@@ -6,7 +6,7 @@
 
         {{ if (ne .image "") }}
             {{ $hidden = "hidden" }}
-            <img src="/img/Logo.svg" />
+            <img src="{{ .image }}" />
         {{ end }}
 
         <h1 class="{{ $hidden }}">{{ .title }}</h1>
