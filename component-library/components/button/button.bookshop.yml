@@ -28,3 +28,10 @@ _inputs:
       values:
         - primary
         - secondary
+  size:  
+    comment: Choose either a small or large button size
+    type: select
+    options:
+      values:
+        - small
+        - large
