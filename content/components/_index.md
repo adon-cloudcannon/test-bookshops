@@ -15,10 +15,6 @@ content_blocks:
         title: "PaperCut Grows"
         subtitle: "Leading the sustainability movement."     
         image: ""  
-<<<<<<< HEAD
-        
-=======
->>>>>>> origin/main
         button:
             _bookshop_name: button
             text: Get PaperCut Grows
