@@ -4,14 +4,14 @@
 <div class="{{ $c }}">
     <div class="content">
 
-        {{ if (ne .image "") }}
+        {{ if (ne .content.image "") }}
             {{ $hidden = "hidden" }}
-            <img src="{{ .image }}" />
+            <img src="{{ .content.image }}" />
         {{ end }}
 
-        <h1 class="{{ $hidden }}">{{ .title }}</h1>
-        <h2>{{ .subtitle }}</h2>
-        <h3>{{ .subtitle }}</h3>
+        <h1 class="{{ $hidden }}">{{ .content.title }}</h1>
+        <h2>{{ .content.subtitle }}</h2>
+        <h3>{{ .content.subtitle }}</h3>
     
         {{ partial "bookshop" (slice "button" .button) }}
     </div>    
