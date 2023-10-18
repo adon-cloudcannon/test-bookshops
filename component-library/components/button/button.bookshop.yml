@@ -12,7 +12,7 @@ blueprint:
   content:
     text: "Hello World!"
   style:
-    style: "primary"
+    colour: "primary"
     size: "large"
     disabled: false
 
