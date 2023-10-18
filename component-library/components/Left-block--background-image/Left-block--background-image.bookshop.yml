@@ -9,15 +9,24 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: ""
-  subtitle: ""
+  title: "Forest Positive"
+  seo_title: "PaperCut Grows"
+  subtitle: "Leading the sustainability movement."
   image: ""
   button: bookshop:button!
+    content:
+      text: "Get PaperCut Grows"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  image:
+    label: "Logo"
   title:
+    comment: "Adding a logo will hide the title input"
     hidden: "image"
+  seo_title:
+    comment: "SEO title will be used instead of title if a logo has been uploaded"  
+    hidden: "!image"  
