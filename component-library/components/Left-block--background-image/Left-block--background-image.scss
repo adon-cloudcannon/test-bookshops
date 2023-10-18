@@ -1,0 +1,72 @@
+.c-Left-block--background-image {
+    background-image: url("/img/mobile-trees.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height:var(--min-height);
+    min-width:480px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .content{      
+        min-height:417px;   
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 51.88%, rgba(0, 0, 0, 0.00) 99.96%);
+        display:flex;     
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 96px 16px;
+        text-align:center;
+
+        h1, h2, h3{ color: var(--core-white); }
+        
+        /* h2 hidden by default, only for tablet and desktop styles */
+        h2{ display:none; }
+    }    
+
+    /* Tablet and Desktop views */
+    @media screen and (min-width:481px){
+        align-items:flex-start;
+
+        .content{
+            text-align:left;
+            align-items:flex-start;
+
+            /* h2 hidden by default, only for tablet and desktop styles */
+            h2{ display:block; }
+            h3{ display:none; }
+            img{ width: 307px; }
+        }
+
+        /* Tablet view */
+        @media screen and (max-width:768px){
+            background-image:url("/img/tablet-trees.jpeg");        
+            
+            .content{
+                padding-left: 24px;            
+                padding-right: 24px;
+                max-width:548px;
+
+                h2{ max-width:463px; }
+            }      
+        }      
+
+        /* Desktop view */
+        @media screen and (min-width:769px){
+            background-image:url("/img/desktop-trees.jpeg");
+            
+            .content{
+                padding-left: 107px;            
+                padding-right: 107px;
+                max-width:627px;
+
+                h2{ max-width:413px; }
+            }     
+        }   
+    }
+    
+    /* Utility classes */
+    .hidden{ display:none; }
+}
