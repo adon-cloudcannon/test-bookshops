@@ -21,14 +21,14 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  style:  
+  style.style:  
     comment: Choose either a primary or secondary colour scheme
     type: select
     options:
       values:
         - primary
         - secondary
-  size:  
+  style.size:  
     comment: Choose either a small or large button size
     type: select
     options:
