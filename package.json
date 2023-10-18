@@ -5,7 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "component": "npx @bookshop/init --component $COMPNAME",    
+    "postcomponent" : "sed -i.bak \"s/c-$COMPNAME/{{ \\$c }}/g\" component-library/components/${COMPNAME}/${COMPNAME}.hugo.html && sed -i.bak \"1s/^/{{ \\$c := \\\"c-$COMPNAME\\\" }}\\n\\n/\" component-library/components/${COMPNAME}/${COMPNAME}.hugo.html && rm component-library/components/${COMPNAME}/${COMPNAME}.hugo.html.bak",
+    "check-env": "node -e 'console.log(process.env)' | grep npm"
   },
   "keywords": [],
   "author": "",
