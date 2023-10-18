@@ -12,8 +12,8 @@ blueprint:
   content:
     text: "Hello World!"
   style:
-    style: ""
-    size: ""
+    style: "primary"
+    size: "large"
     disabled: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -21,14 +21,14 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  style.style:  
+  style:  
     comment: Choose either a primary or secondary colour scheme
     type: select
     options:
       values:
         - primary
         - secondary
-  style.size:  
+  size:  
     comment: Choose either a small or large button size
     type: select
     options:
