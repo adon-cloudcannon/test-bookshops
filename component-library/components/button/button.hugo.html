@@ -1,2 +1,2 @@
 {{ $c := "c-button" }}
-<button class='{{ $c }} {{ $c }}__{{ .style }} {{ $c }}__{{ .size }}' {{ if (eq .disabled true )}}disabled{{ end }}>{{ .text }}</button>
+<button class='{{ $c }} {{ $c }}__{{ .style.style }} {{ $c }}__{{ .style.size }}' {{ if (eq .style.disabled true )}}disabled{{ end }}>{{ .content.text }}</button>
