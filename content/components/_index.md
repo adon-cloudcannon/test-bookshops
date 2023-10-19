@@ -27,4 +27,17 @@ content_blocks:
         colour: primary
         size: large
         disabled: false
+
+  - _bookshop_name: Left-right-block
+    title: Find out more about what's driving the Forest Positive movement
+    text: Some copy here about trees, climate change, deforestation, benefits of planting and/or similar. It shouldn’t be too long, as we expect this section to not be more than this amount of lines. But there’s room for a bit more. Maybe another line.
+    show_button: true
+    button:
+      _bookshop_name: button
+      content:
+        text: Learn more about Forest Positive
+      style:
+        colour: primary
+        size: large
+        disabled: false
 ---

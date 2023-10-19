@@ -1,0 +1,17 @@
+{{ $c := "c-Left-right-block" }}
+
+<div class="{{ $c }}">
+    <div class="content">
+        <h2>{{ .title }}</h2>
+
+        <p>{{ .text }}</p>
+
+        <ul>
+            <li></li>
+        </ul>
+
+        {{ if (eq .show_button true) }}
+            {{ partial "bookshop" (slice "button" .button) }}
+        {{ end }}
+    </div>
+</div>
