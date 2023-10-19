@@ -7,7 +7,9 @@
 
             <p>{{ .text }}</p>
 
-            {{ partial "bookshop" (slice "button" .button) }}
+            {{ if (eq show_button true) }}
+                {{ partial "bookshop" (slice "button" .button) }}
+            {{ end }}
         </div>
 
         <div class="image">

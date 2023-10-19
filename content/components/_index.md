@@ -18,6 +18,7 @@ content_blocks:
     title: What is Forest Positive
     text: What is Forest Positive printing? An evolution of the print space, putting but back more trees than get pulped into printer paper. Doing what’s right for the environment.
     image: "/img/Forest image.svg"
+    show_button: true
     button:
       _bookshop_name: button
       content:
