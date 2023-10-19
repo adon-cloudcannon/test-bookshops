@@ -15,6 +15,7 @@ blueprint:
   image_position: "left"
   show_button: true
   button: bookshop:button!
+  show_list: true
   list_items: 
     - "Item 1"
     - "Item 2"

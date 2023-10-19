@@ -36,6 +36,7 @@ content_blocks:
     image: "/img/woman-on-bench.png"
     image_position: "left"
     show_button: true
+    show_list: true
     list_items: 
       - First link here. A title with a hyperlink behind
       - First link here. A title with a hyperlink behind.
