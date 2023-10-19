@@ -2,11 +2,11 @@
 spec:
   structures:
     - content_blocks
+    - left-right-block
   label: "Button"
   description:
   icon:
-  tags: 
-    - left-right-block
+  tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
