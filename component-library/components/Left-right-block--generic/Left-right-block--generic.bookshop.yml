@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - left-right-block
   label: "Left-right-block--generic"
   description:
   icon:
