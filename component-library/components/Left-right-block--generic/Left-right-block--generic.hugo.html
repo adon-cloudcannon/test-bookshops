@@ -1,8 +1,11 @@
 {{ $c := "c-Left-right-block--generic" }}
 
 <div class="{{ $c }}">
-    
-    {{ partial "bookshop" .left }}
-    {{ partial "bookshop" .right }}
-
+    <div class="content-wrapper">
+        
+        {{ partial "bookshop" .left }}
+        
+        {{ partial "bookshop" .right }}
+        
+    </div>
 </div>

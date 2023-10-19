@@ -10,27 +10,7 @@
         padding:96px 16px;
         display:flex;        
         flex-direction:column;
-        gap:48px;
-
-        .content{            
-            display:flex;
-            flex-direction:column;
-            align-items: flex-start;
-            gap:24px;            
-
-            ul{
-                list-style-image: url(/img/checkmark.svg);
-                list-style-position: inside;
-            }
-
-            li{ margin-bottom:8px; }
-            li:last-of-type{ margin-bottom:0; }   
-
-            a { 
-                color: var(--secondary-blue-900);
-                text-decoration: none;;
-            }
-        }
+        gap:48px;        
         
         img{ width:100%; }
 
