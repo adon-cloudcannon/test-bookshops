@@ -28,8 +28,8 @@ _inputs:
   list_items:
     type: array
   image_position:
-  type: select
-  options:
-    values:
-      - "left"
-      - "right"
+    type: select
+    options:
+      values:
+        - "left"
+        - "right"
