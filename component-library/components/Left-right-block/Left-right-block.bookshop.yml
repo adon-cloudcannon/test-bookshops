@@ -3,8 +3,8 @@ spec:
   structures:
     - content_blocks
   label: "Left-right-block"
-  description:
-  icon:
+  description: A 2-column component to display content on the left and right of the page
+  icon: 
   tags: []
 
 # Defines the structure of this component, as well as the default values
@@ -25,6 +25,8 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  text:
+    type: textarea
   list_items:
     type: array
   image_position:
