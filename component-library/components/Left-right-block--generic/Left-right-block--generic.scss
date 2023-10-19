@@ -8,22 +8,20 @@
     .content-wrapper{
         grid-column: 2 / 14;
         padding:96px 16px;
-        display:flex;        
-        flex-direction:column;
-        gap:48px;        
+        display:grid;        
+        grid-template: 1fr / repeat(12, 1fr);
         
-        img{ width:100%; }
+       /* img{ width:100%; }
 
         .image{           
             background-repeat:no-repeat;
             background-size:contain;
             background-position:center;
-        }
+        }*/
 
         @media screen and (min-width:481px){                                              
     
             padding:96px 0;
-
 
             /* Tablet view */
             @media screen and (max-width:768px){            

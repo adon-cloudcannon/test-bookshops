@@ -11,10 +11,19 @@ spec:
 blueprint:  
   heading: ""
   left: bookshop:structure:left-right-block
+  left_cols: 5
   right: bookshop:structure:left-right-block 
+  right_cols: 6
+  gap: 1
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  left_cols: 
+    type: range
+    options:
+      step: 1
+      max: 12
+      min: 1
