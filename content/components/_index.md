@@ -4,7 +4,7 @@ content_blocks:
     title: Forest Positive
     seo_title: PaperCut Grows
     subtitle: Leading the sustainability movement.
-    image: ""
+    image: ''
     button:
       _bookshop_name: button
       content:
@@ -13,11 +13,13 @@ content_blocks:
         colour: primary
         size: large
         disabled: false
-
   - _bookshop_name: Centered-block--low-image
     title: What is Forest Positive
-    text: What is Forest Positive printing? An evolution of the print space, putting but back more trees than get pulped into printer paper. Doing what’s right for the environment.
-    image: "/img/Forest image.svg"
+    text: >-
+      What is Forest Positive printing? An evolution of the print space, putting
+      but back more trees than get pulped into printer paper. Doing what’s right
+      for the environment.
+    image: /img/Forest image.svg
     show_button: true
     button:
       _bookshop_name: button
