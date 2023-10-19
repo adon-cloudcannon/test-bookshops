@@ -1,5 +1,17 @@
 {{ $c := "c-Centered-block--low-image" }}
 
 <div class="{{ $c }}">
-    <p>{{ .text }}</p>
+    <div class="content-wrapper">
+        <div class="content">
+            <h2>{{ .title }}</h2>
+
+            <p>{{ .text }}</p>
+
+            {{ partial "bookshop" (slice "button" .button) }}
+        </div>
+
+        <div class="image">
+            <img src="{{ .image }}" />
+        </div>
+    </div>
 </div>

@@ -14,7 +14,7 @@
     resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $scss.Permalink }}">
     
-    {{ $variables := resources.Get "sass/variables.scss" | resources.ToCSS | resources.Minify }}
+    {{ $variables := resources.Get "sass/_variables.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $variables.Permalink }}">
 
     {{ $global := resources.Get "sass/global.scss" | resources.ToCSS | resources.Minify }}

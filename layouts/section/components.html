@@ -14,11 +14,24 @@
     resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $scss.Permalink }}">
     
-    {{ $variables := resources.Get "sass/variables.scss" | resources.ToCSS | resources.Minify }}
+    {{ $variables := resources.Get "sass/_variables.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $variables.Permalink }}">
 
     {{ $global := resources.Get "sass/global.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $global.Permalink }}">
+
+    <!--
+    {{ $variables := resources.Get "sass/_variables.scss" }}
+    {{ $global := resources.Get "sass/global.scss" }} -->
+
+    <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
+    <!-- {{ $bookshop_scss_files := partial "bookshop_scss" . }}
+
+    {{ $scss_files := slice $variables $global }} -->
+    <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
+    <!-- {{ $scss := append $bookshop_scss_files $scss_files | resources.Concat "css/bookshop.css" | resources.ToCSS | resources.Minify |
+    resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $scss.Permalink }}">    -->        
 </head>
 
 <body>

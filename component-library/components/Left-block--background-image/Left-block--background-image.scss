@@ -4,12 +4,10 @@
     background-repeat: no-repeat;
     min-height:var(--min-height);
     min-width:480px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display:grid;
     
-    .content{      
+    .content{     
+        grid-column: 1 / 15; 
         min-height:417px;   
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 51.88%, rgba(0, 0, 0, 0.00) 99.96%);
         display:flex;     
@@ -28,8 +26,6 @@
 
     /* Tablet and Desktop views */
     @media screen and (min-width:481px){
-        align-items:flex-start;
-
         .content{
             text-align:left;
             align-items:flex-start;
