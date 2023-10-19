@@ -13,7 +13,9 @@ blueprint:
   text: ""
   image: ""
   show_button: true
-  list_items: []
+  list_items: 
+    - "Item 1"
+    - "Item 2"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

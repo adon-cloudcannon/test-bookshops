@@ -33,7 +33,10 @@ content_blocks:
     text: Some copy here about trees, climate change, deforestation, benefits of planting and/or similar. It shouldn’t be too long, as we expect this section to not be more than this amount of lines. But there’s room for a bit more. Maybe another line.
     image: "/img/woman-on-bench.png"
     show_button: true
-    list_items: ["First link here. A title with a hyperlink behind.", "First link here. A title with a hyperlink behind.", "First link here. A title with a hyperlink behind."]
+    list_items: 
+      - First link here. A title with a hyperlink behind
+      - First link here. A title with a hyperlink behind.
+      - First link here. A title with a hyperlink behind.
     button:
       _bookshop_name: button
       content:
