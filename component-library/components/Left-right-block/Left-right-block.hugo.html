@@ -1,19 +1,25 @@
 {{ $c := "c-Left-right-block" }}
 
 <div class="{{ $c }}">
-    <div class="content">
-        <h2>{{ .title }}</h2>
+    <div class="content-wrapper">
+        <div class="image">
+            <img src="{{ .image }}" />
+        </div>
+        
+        <div class="content">
+            <h2>{{ .title }}</h2>
 
-        <p>{{ .text }}</p>
+            <p>{{ .text }}</p>
 
-        <ul>
-            {{ range .list_items }}
-                <li>{{ . }}</li>
+            <ul>
+                {{ range .list_items }}
+                    <li><a href="">{{ . }}</a></li>
+                {{ end }}
+            </ul>
+
+            {{ if (eq .show_button true) }}
+                {{ partial "bookshop" (slice "button" .button) }}
             {{ end }}
-        </ul>
-
-        {{ if (eq .show_button true) }}
-            {{ partial "bookshop" (slice "button" .button) }}
-        {{ end }}
+        </div>
     </div>
 </div>

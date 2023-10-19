@@ -11,6 +11,7 @@ spec:
 blueprint:
   title: "Hello World!"
   text: ""
+  image: ""
   show_button: true
   list_items: []
 
