@@ -12,6 +12,7 @@ blueprint:
   title: "Hello World!"
   text: ""
   image: ""
+  image_position: "left"
   show_button: true
   list_items: 
     - "Item 1"
@@ -24,3 +25,9 @@ preview:
 _inputs:
   list_items:
     type: array
+  image_position:
+  type: select
+  options:
+    values:
+      - "left"
+      - "right"
