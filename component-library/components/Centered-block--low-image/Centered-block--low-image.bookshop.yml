@@ -11,8 +11,8 @@ spec:
 blueprint:
   title: "Hello World!"
   text: ""
-  button: bookshop:button!
   show_button: true
+  button: bookshop:button!  
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
