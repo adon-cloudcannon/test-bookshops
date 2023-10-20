@@ -3,11 +3,11 @@
 <div class="{{ $c }}">
     <div class="content-wrapper">
         
-        {{ if (ne .left._bookshop_name "" ) }}
+        {{ if (isset(.left)) }}
             {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols )) }}
         {{ end }}
     
-        {{ if (ne .left._bookshop_name "" ) }}
+        {{ if (isset(.right)) }}
             {{ partial "bookshop" (slice .right._bookshop_name (dict "right_cols" .right_cols )) }}
         {{ end }}
 
