@@ -4,11 +4,15 @@
     <div class="content-wrapper">
         
         {{ if .left }}
-            {{ partial "bookshop" (slice .left._bookshop_name (dict "cols" .left_cols "content" .)) }}
+            <div class="left" style="grid-column:1 / span {{ .left_cols }}">
+                {{ partial "bookshop" .left }}
+            </div>
         {{ end }}
     
         {{ if .right }}
-            {{ partial "bookshop" (slice .right._bookshop_name (dict "cols" .right_cols "content" . )) }}
+            <div class="right" style="grid-column:span {{ .right_cols }} / 12">
+                {{ partial "bookshop" .right }}
+            </div>
         {{ end }}
 
     </div>
