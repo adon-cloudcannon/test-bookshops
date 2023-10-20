@@ -30,15 +30,15 @@
     
             /* Desktop view */
             @media screen and (min-width:769px){     
-                display:grid;              
+                //display:grid;              
 
-                .image{ 
+                /*.image{ 
                     order:0;
                     
                     &__right{ order:1; }
-                }
+                }*/
                 
-                img{ display:none; }
+                /*img{ display:none; }*/
             }   
         }
     }

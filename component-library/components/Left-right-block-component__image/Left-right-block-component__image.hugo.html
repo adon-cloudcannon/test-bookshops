@@ -1,7 +1,6 @@
 {{ $c := "c-Left-right-block-component__image" }}
 
-<div class="{{ $c }}" style="grid-column: 1 / {{ .left_cols }}">
-   Here are the left cols {{ .left_cols }}
+<div class="{{ $c }}" style="grid-column: 1 / {{ .cols }}">
    <img src="{{ .content.left.image }}" /> 
 
 </div>

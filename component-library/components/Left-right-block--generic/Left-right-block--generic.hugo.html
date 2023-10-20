@@ -3,14 +3,12 @@
 <div class="{{ $c }}">
     <div class="content-wrapper">
         
-        {{ .left_cols }}
-
         {{ if .left }}
-            {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols "content" .)) }}
+            {{ partial "bookshop" (slice .left._bookshop_name (dict "cols" .left_cols "content" .)) }}
         {{ end }}
     
         {{ if .right }}
-            {{ partial "bookshop" (slice .right._bookshop_name (dict "right_cols" .right_cols )) }}
+            {{ partial "bookshop" (slice .right._bookshop_name (dict "cols" .right_cols "content" . )) }}
         {{ end }}
 
     </div>
