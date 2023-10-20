@@ -1,6 +1,6 @@
 {{ $c := "c-Left-right-block-component__heading-text" }}
 
-<div class="{{ $c }}">
+<div class="{{ $c }}" style="grid-column: span {{ .cols }}">
 
     <h2>{{ .title }}</h2>
 
