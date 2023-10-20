@@ -58,7 +58,7 @@ content_blocks:
       _bookshop_name: Left-right-block-component__heading-text
       title: Hello World!
       text: werggdfgdfgdfgdrgera
-    left_cols: 5
+    left_cols: 2
     right:
       _bookshop_name: Left-right-block-component__image
       image: /img/woman-on-bench.png
