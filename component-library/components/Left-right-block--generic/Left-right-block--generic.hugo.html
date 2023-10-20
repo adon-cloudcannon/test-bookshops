@@ -3,9 +3,13 @@
 <div class="{{ $c }}">
     <div class="content-wrapper">
         
-        {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols )) }}
+        {{ if (ne .left._bookshop_name "" ) }}
+            {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols )) }}
+        {{ end }}
     
-        {{ partial "bookshop" (slice .right._bookshop_name (dict "right_cols" .right_cols )) }}
+        {{ if (ne .left._bookshop_name "" ) }}
+            {{ partial "bookshop" (slice .right._bookshop_name (dict "right_cols" .right_cols )) }}
+        {{ end }}
 
     </div>
 </div>
