@@ -52,11 +52,17 @@ content_blocks:
       - First link here. A title with a hyperlink behind
       - First link here. A title with a hyperlink behind.
       - First link here. A title with a hyperlink behind.
-
   - _bookshop_name: Left-right-block--generic
-    left_cols: 6
-    left: 
-      _bookshop_name: Left-right-block-component__image      
-    right:
+    heading: ''
+    left:
       _bookshop_name: Left-right-block-component__heading-text
+      title: Hello World!
+      text: werggdfgdfgdfgdrgera
+    left_cols: 2
+    right:
+      _bookshop_name: Left-right-block-component__image
+      image: /img/woman-on-bench.png
+      left_cols: 0
+    right_cols: 6
+    gap: 1
 ---
