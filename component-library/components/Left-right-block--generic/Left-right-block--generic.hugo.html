@@ -3,9 +3,9 @@
 <div class="{{ $c }}">
     <div class="content-wrapper">
         
-        {{ partial "bookshop" (dict "page" .left "left_cols" .left_cols ) }}
-        
-        {{ partial "bookshop" .right }}
+        {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols )) }}
+    
+        {{ partial "bookshop" (slice .right._bookshop_name (dict "right_cols" .right_cols )) }}
 
     </div>
 </div>

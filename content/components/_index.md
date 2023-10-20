@@ -52,4 +52,11 @@ content_blocks:
       - First link here. A title with a hyperlink behind
       - First link here. A title with a hyperlink behind.
       - First link here. A title with a hyperlink behind.
+
+  - _bookshop_name: Left-right-block--generic
+    left_cols: 6
+    left: 
+      _bookshop_name: Left-right-block-component__image      
+    right:
+      _bookshop_name: Left-right-block-component__heading-text
 ---
