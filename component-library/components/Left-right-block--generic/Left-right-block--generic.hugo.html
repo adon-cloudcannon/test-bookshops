@@ -4,7 +4,7 @@
     <div class="content-wrapper">
         
         {{ if .left }}
-            {{ partial "bookshop" (slice .left._bookshop_name (dict "left_cols" .left_cols )) }}
+            {{ partial "bookshop" (dict "_bookshop_name" .left._bookshop_name "left_cols" .left_cols ) }}
         {{ end }}
     
         {{ if .right }}
