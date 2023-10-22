@@ -61,7 +61,11 @@ content_blocks:
       text: werggdfgdfgdfgdrgera
       simple_components:
         - _bookshop_name: button
-          text: Some button text
+          content:
+            text: Get PaperCut Grows
+          style:
+            colour: primary
+            size: large
         - _bookshop_name: unordered-list
           items:  
             - "one"
