@@ -58,7 +58,7 @@ content_blocks:
       _bookshop_name: Left-right-block-component__image
       image: /img/woman-on-bench.png
       left_cols: 0
-    left_cols: 2
+    left_cols: 5
     right:
       _bookshop_name: Left-right-block-component__heading-text
       title: Find out more about what’s driving the Forest Positive movement
