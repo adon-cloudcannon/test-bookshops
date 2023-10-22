@@ -5,5 +5,9 @@
     <h2>{{ .title }}</h2>
 
     <p>{{ .text }}</p>
+
+    {{ range .simple_components }}
+        {{ partial "bookshop" . }}
+    {{ end }}
     
 </div>

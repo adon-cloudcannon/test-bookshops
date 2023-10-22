@@ -59,6 +59,15 @@ content_blocks:
       _bookshop_name: Left-right-block-component__heading-text
       title: Hello World!
       text: werggdfgdfgdfgdrgera
+      simple_components:
+        - _bookshop_name: button
+          text: Some button text
+        - _bookshop_name: unordered-list
+          items:  
+            - "one"
+            - "two"
+            - "three"
+
     left_cols: 2
     left:
       _bookshop_name: Left-right-block-component__image

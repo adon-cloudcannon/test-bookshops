@@ -1,0 +1,13 @@
+.c-unordered-list {
+    
+    list-style-image: url(/img/checkmark.svg);
+    list-style-position: inside;
+
+    li{ margin-bottom:8px; }
+    li:last-of-type{ margin-bottom:0; }   
+
+    a { 
+        color: var(--secondary-blue-900);
+        text-decoration: none;
+    }    
+}
