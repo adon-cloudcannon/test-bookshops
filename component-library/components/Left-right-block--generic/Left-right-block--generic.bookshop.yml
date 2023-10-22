@@ -14,7 +14,6 @@ blueprint:
   left_cols: 5
   right: bookshop:structure:left-right-block 
   right_cols: 6
-  gap: 1
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -25,11 +24,11 @@ _inputs:
     type: range
     options:
       step: 1
-      max: 12
-      min: 1
+      max: 7
+      min: 5
   right_cols: 
     type: range
     options:
       step: 1
-      max: 12
-      min: 1
+      max: 7
+      min: 5

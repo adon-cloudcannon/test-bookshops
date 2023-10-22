@@ -55,6 +55,12 @@ content_blocks:
 
   - _bookshop_name: Left-right-block--generic
     heading: ''
+    left_cols: 5
+    left:
+      _bookshop_name: Left-right-block-component__image
+      image: /img/woman-on-bench.png
+    
+    right_cols: 6
     right:
       _bookshop_name: Left-right-block-component__heading-text
       title: Hello World!
@@ -71,12 +77,4 @@ content_blocks:
             - "one"
             - "two"
             - "three"
-
-    left_cols: 2
-    left:
-      _bookshop_name: Left-right-block-component__image
-      image: /img/woman-on-bench.png
-      left_cols: 0
-    right_cols: 6
-    gap: 1
 ---
