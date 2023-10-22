@@ -29,37 +29,13 @@ content_blocks:
         colour: primary
         size: large
         disabled: false
-  - _bookshop_name: Left-right-block
-    title: Find out more about what's driving the Forest Positive movement
-    text: >-
-      Some copy here about trees, climate change, deforestation, benefits of
-      planting and/or similar. It shouldn’t be too long, as we expect this
-      section to not be more than this amount of lines. But there’s room for a
-      bit more. Maybe another line.
-    image: /img/woman-on-bench.png
-    image_position: right
-    show_button: true
-    button:
-      _bookshop_name: button
-      content:
-        text: Learn more about Forest Positive
-      style:
-        colour: primary
-        size: large
-        disabled: false
-    show_list: true
-    list_items:
-      - First link here. A title with a hyperlink behind
-      - First link here. A title with a hyperlink behind.
-      - First link here. A title with a hyperlink behind.
   - _bookshop_name: Left-right-block--generic
-    heading: ''
-    left_cols: 5
+    heading:
     left:
       _bookshop_name: Left-right-block-component__image
       image: /img/woman-on-bench.png
-    
-    right_cols: 6
+      left_cols: 0
+    left_cols: 5
     right:
       _bookshop_name: Left-right-block-component__heading-text
       title: Find out more about what’s driving the Forest Positive movement
@@ -80,9 +56,7 @@ content_blocks:
           style:
             colour: primary
             size: large
-        - _bookshop_name: unordered-list
-          items:  
-            - "one"
-            - "two"
-            - "three"
+            disabled: false
+    right_cols: 6
+    gap: 1
 ---
