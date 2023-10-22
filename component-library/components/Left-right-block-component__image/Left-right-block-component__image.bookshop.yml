@@ -3,7 +3,7 @@ spec:
   structures:
     - left-right-block
   label: "Left-right-block-component__image"
-  description:
+  description: Image
   icon:
   tags: []
 
