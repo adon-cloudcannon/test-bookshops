@@ -52,31 +52,34 @@ content_blocks:
       - First link here. A title with a hyperlink behind
       - First link here. A title with a hyperlink behind.
       - First link here. A title with a hyperlink behind.
-
   - _bookshop_name: Left-right-block--generic
-    heading: ''
+    heading:
+    left:
+      _bookshop_name: Left-right-block-component__image
+      image: /img/woman-on-bench.png
+      left_cols: 0
+    left_cols: 2
     right:
       _bookshop_name: Left-right-block-component__heading-text
-      title: Hello World!
-      text: werggdfgdfgdfgdrgera
+      title: Find out more about what’s driving the Forest Positive movement
+      text: >-
+        Some copy here about trees, climate change, deforestation, benefits of
+        planting and/or similar. It shouldn’t be too long, as we expect this
+        section to not be more than this amount of lines. But there’s room for a
+        bit more. Maybe another line.
       simple_components:
+        - _bookshop_name: unordered-list
+          items:
+            - First link here. A title with a hyperlink behind.
+            - Link here. A title with a hyperlink behind.
+            - Link here. A title with a hyperlink behind.
         - _bookshop_name: button
           content:
             text: Get PaperCut Grows
           style:
             colour: primary
             size: large
-        - _bookshop_name: unordered-list
-          items:  
-            - "one"
-            - "two"
-            - "three"
-
-    left_cols: 2
-    left:
-      _bookshop_name: Left-right-block-component__image
-      image: /img/woman-on-bench.png
-      left_cols: 0
+            disabled: false
     right_cols: 6
     gap: 1
 ---
