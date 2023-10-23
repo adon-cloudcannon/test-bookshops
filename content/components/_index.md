@@ -33,7 +33,7 @@ content_blocks:
     heading:
     left:
       _bookshop_name: Left-right-block-component__image
-      image: /img/woman-on-bench.png
+      image: /img/woman-on-bench..png
     left_cols: 5
     right:
       _bookshop_name: Left-right-block-component__heading-text
@@ -43,7 +43,7 @@ content_blocks:
         planting and/or similar. It shouldn’t be too long, as we expect this
         section to not be more than this amount of lines. But there’s room for a
         bit more. Maybe another line.
-      eyebrow: ""
+      eyebrow: ''
       simple_components:
         - _bookshop_name: unordered-list
           items:
@@ -58,7 +58,7 @@ content_blocks:
             size: large
             disabled: false
     right_cols: 6
-
+    forceOnTop: left
   - _bookshop_name: Left-right-block--generic
     heading:
     left:
@@ -70,9 +70,14 @@ content_blocks:
       _bookshop_name: Left-right-block-component__heading-text
       title: We plant trees to counteract your printing’s impact
       text: >-
-        Forest Positive printing is extending the Forest Positive evolution into the print space. It allows organisations to actively contribute to more trees being planted than those pulped into printing paper. Forest Positive printing moves beyond reducing waste and transforms essential business printing from a negative environmental footprint to a positive force for reforestation and ecological renewal.
+        Forest Positive printing is extending the Forest Positive evolution into
+        the print space. It allows organisations to actively contribute to more
+        trees being planted than those pulped into printing paper. Forest
+        Positive printing moves beyond reducing waste and transforms essential
+        business printing from a negative environmental footprint to a positive
+        force for reforestation and ecological renewal.
       eyebrow: What is Forest Positive printing
-      simple_components: []        
+      simple_components: []
     right_cols: 6
     forceOnTop: none
 ---
