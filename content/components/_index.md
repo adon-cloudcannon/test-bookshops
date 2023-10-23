@@ -33,29 +33,31 @@ content_blocks:
     heading: ''
     left:
       _bookshop_name: Left-right-block-component__heading-text
-      title: Hello World!
+      title: Find out more about what’s driving the Forest Positive movement
       text: >-
-        zcbsdjhgfbvskdjbksjdbgkjsdbgkjdfbgkjdfv, d,jdsb ngkjvsdbfgb dfg df
-        g.dgdfg dg dg d g
+        Some copy here about trees, climate change, deforestation, benefits of
+        planting and/or similar. It shouldn’t be too long, as we expect this
+        section to not be more than this amount of lines. But there’s room for a
+        bit more. Maybe another line.
       eyebrow: ''
       simple_components:
         - _bookshop_name: unordered-list
           items:
-            - Item 1
-            - Item 2
-            - Item 3
+            - First link here. A title with a hyperlink behind.
+            - Link here. A title with a hyperlink behind.
+            - Link here. A title with a hyperlink behind.
         - _bookshop_name: button
           content:
-            text: Hello World!
+            text: Lear more about Forest Positive
           style:
             colour: primary
             size: large
             disabled: false
-    left_cols: 5
+    left_cols: 6
     right:
       _bookshop_name: Left-right-block-component__image
       image: /img/woman-on-bench..png
-    right_cols: 6
+    right_cols: 5
     forceRightOnTop: true
   - _bookshop_name: Left-right-block--generic
     heading: ''
