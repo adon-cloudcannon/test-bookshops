@@ -4,34 +4,16 @@
     <div class="content-wrapper">
         
         {{ if .left }}
-            <div class="left">
+            <div class="left left--{{ .left_cols }}">
                 {{ partial "bookshop" .left }}
             </div>
         {{ end }}
     
         {{ if .right }}
-            <div class="right {{ if (eq .forceRightOnTop true) }}forceRightOnTop{{ end }}">
+            <div class="right right--{{ .right_cols }} {{ if (eq .forceRightOnTop true) }}forceRightOnTop{{ end }}">
                 {{ partial "bookshop" .right }}
             </div>
         {{ end }}
 
     </div>
 </div>
-
-<style>    
-
-    @media screen and (min-width:769px){             
-        .c-Left-right-block--generic{
-            .content-wrapper{
-                .left{
-                    grid-column:1 / span {{ .left_cols }};
-                }
-
-                .right{
-                    grid-column:span {{ .right_cols }} / 13;
-                }
-            }
-        }
-    }  
-
-</style>

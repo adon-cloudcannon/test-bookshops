@@ -19,7 +19,7 @@
 
         .left{ order:0; }
         .right{ order:0; }
-        .right.forceRightOnTop{ order: -1; }
+        .right.forceRightOnTop{ order: -1; }        
 
         @media screen and (min-width:481px){                                                          
             padding:96px 0;                       
@@ -38,6 +38,12 @@
                 .left, .right{
                     order:0!important;
                 }
+
+                .left--5{ grid-column: 1 / span 5 }
+                .left--6{ grid-column: 1 / span 6 }
+
+                .right--5{ grid-column: span 5 / 13 }
+                .right--6{ grid-column: span 6 / 13 }
             }   
         }
     }
