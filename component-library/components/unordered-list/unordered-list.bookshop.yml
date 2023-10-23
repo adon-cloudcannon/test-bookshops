@@ -2,8 +2,8 @@
 spec:
   structures:
     - simple_components
-  label: "Unordered-list"
-  description: List
+  label: "List"
+  description: 
   icon:
   tags: []
 

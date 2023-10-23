@@ -4,16 +4,45 @@
     <div class="content-wrapper">
         
         {{ if .left }}
-            <div class="left" style="grid-column:1 / span {{ .left_cols }}">
+            <div class="left">
                 {{ partial "bookshop" .left }}
             </div>
         {{ end }}
     
         {{ if .right }}
-            <div class="right" style="grid-column:span {{ .right_cols }} / 13">
+            <div class="right">
                 {{ partial "bookshop" .right }}
             </div>
         {{ end }}
 
     </div>
 </div>
+
+<style>
+
+    @media screen and (min-width:769px){     
+        .c-Left-right-block--generic{
+            .content-wrapper{
+                .left{
+                    grid-column:1 / span {{ .left_cols }};
+                    {{ if (eq .forceOnTop "left" )}}
+                        order: 1;
+                    {{ else }}
+                        order: 2;
+                    {{ end }}
+
+                }
+
+                .right{
+                    grid-column:span {{ .right_cols }} / 13;
+                    {{ if (eq .forceOnTop "right" )}}
+                        order: 1;
+                    {{ else }}
+                        order: 2;
+                    {{ end }}
+                }
+            }
+        }
+    }  
+
+</style>

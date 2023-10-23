@@ -9,21 +9,18 @@
         grid-column: 2 / 14;
         padding:96px 16px;
         display:grid;        
-        grid-template: 1fr / repeat(12, 1fr);
+        grid-template:1fr / 1fr;        
 
         .left, .right{
             display:flex;
-            align-items: center;
+            align-items: center;            
         }
 
         @media screen and (min-width:481px){                                              
-            grid-template:1fr / 1fr;
+            display:flex;
+            flex-direction:column;
             padding:96px 0;
-            gap:48px;
-
-            .left, .right{
-                grid-column: 1 / 12!important;
-            }
+            gap:48px;            
 
             /* Tablet view */
             @media screen and (max-width:768px){            
@@ -32,7 +29,7 @@
     
             /* Desktop view */
             @media screen and (min-width:769px){     
-                
+                grid-template: 1fr / repeat(12, 1fr);                
             }   
         }
     }
