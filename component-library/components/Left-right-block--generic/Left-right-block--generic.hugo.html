@@ -1,6 +1,38 @@
 {{ $c := "c-Left-right-block--generic" }}
 
 <div class="{{ $c }}">
+
+    <style scoped>
+        
+        .content-wrapper{
+            .left{
+                order:0;
+            }
+
+            .right{
+                {{ if (eq .forceOnTop "right" )}}
+                    order: -1;
+                {{ else }}
+                    order: 0;
+                {{ end }}
+            }
+        }
+    
+
+        @media screen and (min-width:769px){             
+            .content-wrapper{
+                .left{
+                    grid-column:1 / span {{ .left_cols }};
+                }
+
+                .right{
+                    grid-column:span {{ .right_cols }} / 13;
+                }
+            }
+        }         
+    
+    </style>
+
     <div class="content-wrapper">
         
         {{ if .left }}
@@ -17,37 +49,3 @@
 
     </div>
 </div>
-
-<style>
-
-    .c-Left-right-block--generic{
-        .content-wrapper{
-            .left{
-                order:0;
-            }
-
-            .right{
-                {{ if (eq .forceOnTop "right" )}}
-                    order: -1;
-                {{ else }}
-                    order: 0;
-                {{ end }}
-            }
-        }
-    }
-
-    @media screen and (min-width:769px){             
-        .c-Left-right-block--generic{
-            .content-wrapper{
-                .left{
-                    grid-column:1 / span {{ .left_cols }};
-                }
-
-                .right{
-                    grid-column:span {{ .right_cols }} / 13;
-                }
-            }
-        }
-    }  
-
-</style>
