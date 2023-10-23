@@ -7,18 +7,16 @@
 
     .content-wrapper{
         grid-column: 2 / 14;
-        padding:96px 16px;
-        display:grid;        
-        grid-template:1fr / 1fr;        
+        padding:96px 16px;                      
+        display:flex;
+        flex-direction:column;
 
         .left, .right{
             display:flex;
             align-items: center;            
         }
 
-        @media screen and (min-width:481px){                                              
-            display:flex;
-            flex-direction:column;
+        @media screen and (min-width:481px){                                                          
             padding:96px 0;
             gap:48px;            
 
@@ -29,6 +27,7 @@
     
             /* Desktop view */
             @media screen and (min-width:769px){     
+                display:grid;  
                 grid-template: 1fr / repeat(12, 1fr);                
             }   
         }
