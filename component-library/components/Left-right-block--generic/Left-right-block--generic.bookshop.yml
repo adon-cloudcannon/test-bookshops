@@ -14,7 +14,7 @@ blueprint:
   left_cols: 5
   right: bookshop:structure:left-right-block 
   right_cols: 6
-  forceOnTop: "left"
+  forceOnTop: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -35,7 +35,8 @@ _inputs:
       min: 5
   forceOnTop:
     type: select
-    values:
-      - none
-      - left
-      - right
+      options:
+        values:
+          - none
+          - left
+          - right
