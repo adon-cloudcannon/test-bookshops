@@ -43,6 +43,7 @@ content_blocks:
         planting and/or similar. It shouldn’t be too long, as we expect this
         section to not be more than this amount of lines. But there’s room for a
         bit more. Maybe another line.
+      eyebrow: ""
       simple_components:
         - _bookshop_name: unordered-list
           items:
@@ -73,18 +74,7 @@ content_blocks:
         planting and/or similar. It shouldn’t be too long, as we expect this
         section to not be more than this amount of lines. But there’s room for a
         bit more. Maybe another line.
-      simple_components:
-        - _bookshop_name: unordered-list
-          items:
-            - First link here. A title with a hyperlink behind.
-            - Link here. A title with a hyperlink behind.
-            - Link here. A title with a hyperlink behind.
-        - _bookshop_name: button
-          content:
-            text: Get PaperCut Grows
-          style:
-            colour: primary
-            size: large
-            disabled: false
+      eyebrow: What is Forest Positive printing
+      simple_components: []        
     right_cols: 6
 ---
