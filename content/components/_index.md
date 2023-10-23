@@ -63,8 +63,10 @@ content_blocks:
     heading:
     left:
       _bookshop_name: Left-right-block-component__quote
-      text: This is an amazing quote
-      author: Adon Moskal
+      text: >-
+        What we are doing to the forests of the world is but a mirror reflection
+        of what we are doing to ourselves and to one another.
+      author: Chris Maser
     left_cols: 5
     right:
       _bookshop_name: Left-right-block-component__heading-text
@@ -79,5 +81,5 @@ content_blocks:
       eyebrow: What is Forest Positive printing
       simple_components: []
     right_cols: 6
-    forceOnTop: none
+    forceOnTop: right
 ---
