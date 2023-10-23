@@ -1,6 +1,6 @@
 {{ $c := "c-logo" }}
 
 <div class="{{ $c }}">
-    <img src="{{ .image }}" />
+    <img src="{{ .image }}" alt='{{ if (ne .alt "") }}{{ .alt }}{{ else }}LOGO{{ end }}' />
     <p class="label">{{ .text }}</p>
 </div>
