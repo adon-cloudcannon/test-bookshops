@@ -10,19 +10,29 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: "Hello World!"
-  logos: 
-    - bookshop:logo!
-  displayLogos: "3"
+  logo1: bookshop:logo!
+    text: "Hello World!"
+  logo2: bookshop:logo!
+    text: "Hello World!"
+  logo3: bookshop:logo!
+    text: "Hello World!"
+  logo4: bookshop:logo
+    text: "Hello World!"
+  logo5: bookshop:logo
+    text: "Hello World!"
+
+  # logos: 
+  #  - bookshop:logo!  
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  displayLogos:
-    label: "How many logos to display"
-    options:
-      values:
-        - "3"
-        - "4"
-        - "5"
+  # displayLogos:
+  #  label: "How many logos to display"
+  #  options:
+  #    values:
+  #      - "3"
+  #      - "4"
+  #      - "5"

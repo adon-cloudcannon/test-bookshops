@@ -4,8 +4,16 @@
     <div class="content-wrapper">
         <p class="title">{{ .title }}</p>
         <div class="logos-row">
-            {{ range .logos }}
-                {{ partial "bookshop" . }}
+            {{ partial "bookshop" .logo1 }}            
+            {{ partial "bookshop" .logo2 }}       
+            {{ partial "bookshop" .logo3 }}       
+
+            {{ if (ne .logo4.text "") }}
+                {{ partial "bookshop" .logo4 }}       
+            {{ end }}
+
+            {{ if (ne .logo5.text "") }}
+                {{ partial "bookshop" .logo5 }}       
             {{ end }}
         </div>
     </div>

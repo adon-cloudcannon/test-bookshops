@@ -84,21 +84,24 @@ content_blocks:
     forceRightOnTop: false
   - _bookshop_name: Logos-strip
     title: Trusted by schools around the world
-    logos:
-      - _bookshop_name: logo
-        text: Wheatley Park School
-        image: /img/wheatley-purple.png
-      - _bookshop_name: logo
-        text: St Martins School
-        image: /img/st-martins-pink.png
-      - _bookshop_name: logo
-        text: Minehead Middle School
-        image: /img/minehead.png
-      - _bookshop_name: logo
-        text: St Martins School
-        image: /img/st-martins-grey.png
-      - _bookshop_name: logo
-        text: Wheatley Park School
-        image: /img/wheatley-blue.png
-    displayLogos: "3"
+    logo1:
+      _bookshop_name: logo
+      text: Wheatley Park School
+      image: /img/wheatley-purple.png
+    logo2:
+      _bookshop_name: logo
+      text: St Martins School
+      image: /img/st-martins-pink.png
+    logo3:
+      _bookshop_name: logo
+      text: Minehead Middle School
+      image: /img/minehead.png
+    logo4:
+      _bookshop_name: logo
+      text: St Martins School
+      image: /img/st-martins-grey.png
+    logo5:
+      _bookshop_name: logo
+      text: Wheatley Park School
+      image: /img/wheatley-blue.png
 ---
