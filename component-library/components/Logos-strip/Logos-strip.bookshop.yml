@@ -11,15 +11,10 @@ spec:
 blueprint:
   title: "Hello World!"
   logo1: bookshop:logo!
-    text: "Hello World!"
   logo2: bookshop:logo!
-    text: "Hello World!"
   logo3: bookshop:logo!
-    text: "Hello World!"
   logo4: bookshop:logo
-    text: "Hello World!"
   logo5: bookshop:logo
-    text: "Hello World!"
 
   # logos: 
   #  - bookshop:logo!  
