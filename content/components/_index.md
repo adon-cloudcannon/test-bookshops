@@ -100,4 +100,5 @@ content_blocks:
       - _bookshop_name: logo
         text: Wheatley Park School
         image: /img/wheatley-blue.png
+    displayLogos: "3"
 ---
