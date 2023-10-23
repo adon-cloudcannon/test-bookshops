@@ -35,8 +35,8 @@ _inputs:
       min: 5
   forceOnTop:
     type: select
-      options:
-        values:
-          - none
-          - left
-          - right
+    options:
+      values:
+        - none
+        - left
+        - right
