@@ -23,19 +23,14 @@
     .c-Left-right-block--generic{
         .content-wrapper{
             .left{
-                {{ if (eq .forceOnTop "left" )}}
-                    order: 1;
-                {{ else }}
-                    order: 2;
-                {{ end }}
-
+                order:0;
             }
 
             .right{
                 {{ if (eq .forceOnTop "right" )}}
-                    order: 1;
+                    order: -1;
                 {{ else }}
-                    order: 2;
+                    order: 0;
                 {{ end }}
             }
         }
