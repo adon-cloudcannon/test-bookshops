@@ -1,6 +1,11 @@
 .c-logo {
     display:flex;
     flex-direction: column;
-    align-items: center;
-    gap:4px;
+    align-items: center;    
+    height:83px;
+    justify-content:end;
+
+    img{
+        width: auto!important;
+    }
 }
