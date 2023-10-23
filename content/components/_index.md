@@ -30,56 +30,46 @@ content_blocks:
         size: large
         disabled: false
   - _bookshop_name: Left-right-block--generic
-    heading:
+    heading: ''
     left:
-      _bookshop_name: Left-right-block-component__image
-      image: /img/woman-on-bench..png
-    left_cols: 5
-    right:
       _bookshop_name: Left-right-block-component__heading-text
-      title: Find out more about what’s driving the Forest Positive movement
+      title: Hello World!
       text: >-
-        Some copy here about trees, climate change, deforestation, benefits of
-        planting and/or similar. It shouldn’t be too long, as we expect this
-        section to not be more than this amount of lines. But there’s room for a
-        bit more. Maybe another line.
+        zcbsdjhgfbvskdjbksjdbgkjsdbgkjdfbgkjdfv, d,jdsb ngkjvsdbfgb dfg df
+        g.dgdfg dg dg d g
       eyebrow: ''
       simple_components:
         - _bookshop_name: unordered-list
           items:
-            - First link here. A title with a hyperlink behind.
-            - Link here. A title with a hyperlink behind.
-            - Link here. A title with a hyperlink behind.
+            - Item 1
+            - Item 2
+            - Item 3
         - _bookshop_name: button
           content:
-            text: Get PaperCut Grows
+            text: Hello World!
           style:
             colour: primary
             size: large
             disabled: false
-    right_cols: 6
-    forceOnTop: left
-  - _bookshop_name: Left-right-block--generic
-    heading:
-    left:
-      _bookshop_name: Left-right-block-component__quote
-      text: >-
-        What we are doing to the forests of the world is but a mirror reflection
-        of what we are doing to ourselves and to one another.
-      author: Chris Maser
     left_cols: 5
     right:
+      _bookshop_name: Left-right-block-component__image
+      image: /img/woman-on-bench..png
+    right_cols: 6
+    forceRightOnTop: true
+  - _bookshop_name: Left-right-block--generic
+    heading: ''
+    left:
       _bookshop_name: Left-right-block-component__heading-text
-      title: We plant trees to counteract your printing’s impact
-      text: >-
-        Forest Positive printing is extending the Forest Positive evolution into
-        the print space. It allows organisations to actively contribute to more
-        trees being planted than those pulped into printing paper. Forest
-        Positive printing moves beyond reducing waste and transforms essential
-        business printing from a negative environmental footprint to a positive
-        force for reforestation and ecological renewal.
-      eyebrow: What is Forest Positive printing
+      title: Hello World!
+      text: 'sdgdfs dfg dsfgdg dg dg dfg dg dg dfg dg d dg '
+      eyebrow: sdsg dg sgsrg dfg dfg d
       simple_components: []
+    left_cols: 5
+    right:
+      _bookshop_name: Left-right-block-component__quote
+      text: Hello World!
+      author: Albert Einstein
     right_cols: 6
     forceRightOnTop: false
 ---
