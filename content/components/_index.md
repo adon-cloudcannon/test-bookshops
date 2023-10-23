@@ -88,4 +88,10 @@ content_blocks:
       - _bookshop_name: logo
         text: Wheatley Park School
         image: /img/wheatley-purple.png
+      - _bookshop_name: logo
+        text: St Martins School
+        image: /img/st-martins-pink.png
+      - _bookshop_name: logo
+        text: Minehead Middle School
+        image: /img/minehead.png
 ---
