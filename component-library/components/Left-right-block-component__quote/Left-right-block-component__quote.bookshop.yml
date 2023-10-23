@@ -2,8 +2,8 @@
 spec:
   structures:
     - left-right-block
-  label: "Left-right-block-component__quote"
-  description: Quote
+  label: "Quote"
+  description: 
   icon:
   tags: []
 

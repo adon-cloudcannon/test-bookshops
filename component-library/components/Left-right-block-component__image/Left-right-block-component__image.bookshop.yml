@@ -2,8 +2,8 @@
 spec:
   structures:
     - left-right-block
-  label: "Left-right-block-component__image"
-  description: Image
+  label: "Image"
+  description: 
   icon:
   tags: []
 

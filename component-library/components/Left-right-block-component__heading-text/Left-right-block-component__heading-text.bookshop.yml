@@ -2,8 +2,8 @@
 spec:
   structures:
     - left-right-block
-  label: "Left-right-block-component__heading-text"
-  description: Text with heading
+  label: "Text with heading"
+  description: 
   icon:
   tags: []
 
