@@ -47,6 +47,13 @@ p.eyebrow{
     margin-bottom: -8px;
 }
 
+p.title{
+    font: var(--main-body-font-700);   
+    color: var(--primary-grey-600);
+    text-transform:uppercase;
+    letter-spacing: 1.5px;
+}
+
 p, a{
     font: var(--main-body-font-400);
     font-size: 1rem;

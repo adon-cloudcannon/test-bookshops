@@ -72,4 +72,10 @@ content_blocks:
       author: Albert Einstein
     right_cols: 6
     forceRightOnTop: false
+
+  - _bookshop_name: Logos-strip
+    title: "Trusted by schools around the world"
+    logos:
+      - _bookshop_name: logo
+        text: "Test??"
 ---
