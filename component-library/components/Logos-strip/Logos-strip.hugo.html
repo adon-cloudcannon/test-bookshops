@@ -8,11 +8,11 @@
             {{ partial "bookshop" .logo2 }}       
             {{ partial "bookshop" .logo3 }}       
 
-            {{ if (ne .logo4.text "") }}
+            {{ if .logo4 }}
                 {{ partial "bookshop" .logo4 }}       
             {{ end }}
 
-            {{ if (ne .logo5.text "") }}
+            {{ if .logo5 }}
                 {{ partial "bookshop" .logo5 }}       
             {{ end }}
         </div>
