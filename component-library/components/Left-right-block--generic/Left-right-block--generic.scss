@@ -18,8 +18,7 @@
         }
 
         @media screen and (min-width:481px){                                                          
-            padding:96px 0;
-            gap:0;            
+            padding:96px 0;                       
 
             /* Tablet view */
             @media screen and (max-width:768px){            
@@ -27,7 +26,8 @@
             }      
     
             /* Desktop view */
-            @media screen and (min-width:769px){     
+            @media screen and (min-width:769px){   
+                gap:0;   
                 display:grid;  
                 grid-template: 1fr / repeat(12, 1fr);                
             }   
