@@ -20,26 +20,36 @@
 
 <style>
 
-    @media screen and (min-width:769px){     
+    .c-Left-right-block--generic{
+        .content-wrapper{
+            .left{
+                {{ if (eq .forceOnTop "left" )}}
+                    order: 1;
+                {{ else }}
+                    order: 2;
+                {{ end }}
+
+            }
+
+            .right{
+                {{ if (eq .forceOnTop "right" )}}
+                    order: 1;
+                {{ else }}
+                    order: 2;
+                {{ end }}
+            }
+        }
+    }
+
+    @media screen and (min-width:769px){             
         .c-Left-right-block--generic{
             .content-wrapper{
                 .left{
                     grid-column:1 / span {{ .left_cols }};
-                    {{ if (eq .forceOnTop "left" )}}
-                        order: 1;
-                    {{ else }}
-                        order: 2;
-                    {{ end }}
-
                 }
 
                 .right{
                     grid-column:span {{ .right_cols }} / 13;
-                    {{ if (eq .forceOnTop "right" )}}
-                        order: 1;
-                    {{ else }}
-                        order: 2;
-                    {{ end }}
                 }
             }
         }
