@@ -24,11 +24,11 @@ _inputs:
     type: range
     options:
       step: 1
-      max: 7
+      max: 6
       min: 5
   right_cols: 
     type: range
     options:
       step: 1
-      max: 7
+      max: 6
       min: 5

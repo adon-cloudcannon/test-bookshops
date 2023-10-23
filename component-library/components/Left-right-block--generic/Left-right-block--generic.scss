@@ -17,8 +17,13 @@
         }
 
         @media screen and (min-width:481px){                                              
-    
+            grid-template:1fr / 1fr;
             padding:96px 0;
+            gap:48px;
+
+            .left, .right{
+                grid-column: 1 / 12!important;
+            }
 
             /* Tablet view */
             @media screen and (max-width:768px){            
