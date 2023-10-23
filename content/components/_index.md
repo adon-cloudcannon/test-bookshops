@@ -82,10 +82,16 @@ content_blocks:
       author: Chris Maser
     right_cols: 5
     forceRightOnTop: false
-
   - _bookshop_name: Logos-strip
-    title: "Trusted by schools around the world"
+    title: Trusted by schools around the world
     logos:
       - _bookshop_name: logo
-        text: "Test??"
+        text: Wheatley Park School
+        image: /img/wheatley-purple.png
+      - _bookshop_name: logo
+        text: St Martins School
+        image: /img/st-martins-pink.png
+      - _bookshop_name: logo
+        text: Minehead Middle School
+        image: /img/minehead.png
 ---
