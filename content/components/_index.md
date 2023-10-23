@@ -81,5 +81,5 @@ content_blocks:
       eyebrow: What is Forest Positive printing
       simple_components: []
     right_cols: 6
-    forceOnTop: right
+    forceRightOnTop: false
 ---
