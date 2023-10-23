@@ -15,15 +15,15 @@
 
 @font-face {
     font-family: "Barlow";
-    src: url("/fonts/Barlow/Barlow-Medium.ttf") format("truetype");
-    font-weight: 600;
+    src: url("/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Barlow";
-    src: url("/fonts/Barlow/Barlow-MediumItalic.ttf") format("truetype");
-    font-weight: 600;
+    src: url("/fonts/Barlow/Barlow-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -126,5 +126,5 @@
     --main-heading-font-700: 700 24px "Barlow", sans-serif;
     
     --main-body-font-400: 400 16px "Source Sans Pro", sans-serif;
-    --main-body-font-600: 600 16px "Source Sans Pro", sans-serif;      
+    --main-body-font-600: 500 16px "Source Sans Pro", sans-serif;      
 }
