@@ -51,25 +51,6 @@ content_blocks:
         author: Chris Maser
     right_cols: 5
     forceRightOnTop: false
-  - _bookshop_name: Logos-strip
-    title: Hello World!
-    logo1:
-      _bookshop_name: logo
-      text: Hello World!
-      image: ''
-      alt: ''
-    logo2:
-      _bookshop_name: logo
-      text: Hello World!
-      image: ''
-      alt: ''
-    logo3:
-      _bookshop_name: logo
-      text: Hello World!
-      image: ''
-      alt: ''
-    logo4:
-    logo5:
   - _bookshop_name: Centered-block--demo
     heading:
       _bookshop_name: Left-right-block-component__heading-text

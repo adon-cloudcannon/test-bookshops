@@ -10,14 +10,16 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: "Hello World!"
-  logo1: bookshop:logo!
-  logo2: bookshop:logo!
-  logo3: bookshop:logo!
-  logo4: bookshop:logo
-  logo5: bookshop:logo
+  #logo1: bookshop:logo!
+  #logo2: bookshop:logo!
+  #logo3: bookshop:logo!
+  #logo4: bookshop:logo
+  #logo5: bookshop:logo
 
-  # logos: 
-  #  - bookshop:logo!  
+  logos: 
+    - bookshop:logo!  
+    - bookshop:logo! 
+    - bookshop:logo! 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
