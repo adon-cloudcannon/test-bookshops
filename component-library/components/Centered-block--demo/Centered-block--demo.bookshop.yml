@@ -21,12 +21,16 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   media:
+    label: Uploaded media
     type: file
   external_url:
+    label: External URL
     type: text
   embed_code:
+    label: Embed code
     type: textarea
   use:
+    label: Media
     type: choice
     options:
       values:
