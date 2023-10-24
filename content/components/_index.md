@@ -112,5 +112,4 @@ content_blocks:
       simple_components: []
     media: /uploads/pexels-videos-2583475-1080p.mp4
     external_url: https://cloudcannon.wistia.com/medias/bp4zcpcmh9
-    use_external_url: false
 ---
