@@ -31,10 +31,10 @@
                         {{ end }}                          
                     {{ else if ne $media_ext "" }}
                         {{ if in $img_extensions $media_ext }}
-                            <img src="{{ .media_path }}" />
+                            <img src="{{ $media_path }}" />
                         {{ else if in $vid_extensions $media_ext }}
                             <video autoplay>
-                                <source src="{{ .media_path }}">
+                                <source src="{{ $media_path }}">
                             </video>
                         {{ end }}    
                     {{ end }}                    
