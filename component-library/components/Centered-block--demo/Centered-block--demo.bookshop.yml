@@ -11,6 +11,8 @@ spec:
 blueprint:
   heading: bookshop:Left-right-block-component__heading-text
   media: ""
+  external_url: ""
+  use_external_url: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -19,3 +21,7 @@ preview:
 _inputs:
   media:
     type: file
+  external_url:
+    type: text
+  use_external_url:
+    type: boolean
