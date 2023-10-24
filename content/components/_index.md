@@ -80,29 +80,6 @@ content_blocks:
       /></div></div></div></div>
   - _bookshop_name: Logos-strip
     title: Hello World!
-    logos:
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
-      - _bookshop_name: logo
-        text: Hello World!
-        image: ''
-        alt: ''
+    logos: []
+
 ---
