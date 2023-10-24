@@ -13,7 +13,7 @@ blueprint:
   media: ""
   external_url: ""
   embed_code: ""
-  use_external_url: false
+  use: "media"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -26,5 +26,10 @@ _inputs:
     type: text
   embed_code:
     type: textarea
-  use_external_url:
-    type: switch
+  use:
+    type: choice
+    options:
+      values:
+        - media
+        - external url
+        - embed code

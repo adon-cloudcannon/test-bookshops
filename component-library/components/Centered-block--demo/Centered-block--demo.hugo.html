@@ -16,7 +16,7 @@
 
             <div class="media-holder">
                 <div class="media elevation-medium">
-                    {{ if ne .use_external_url true }}
+                    {{ if eq .use "media" }}
                         {{ if in $img_extensions $media_ext }}
                             <img src="{{ .media }}" />
                         {{ else if in $vid_extensions $media_ext }}
@@ -24,12 +24,15 @@
                                 <source src="{{ .media }}">
                             </video>
                         {{ end }}      
-                    {{ else }}
-                        {{ .embed_code | safeHTML }}
+                    {{ else if eq .use "external url" }}                        
                         {{ if ne .external_url "" }}              
                             Put the external content here
                         {{ end }}
-                    {{ end }}
+                    {{ else if eq .use "embed code" }}
+                        {{ if ne .embed_code "" }}
+                            {{ .embed_code | safeHTML }}
+                        {{ end }}
+                    {{ end }}                    
                 </div>
             </div>
         </div>
