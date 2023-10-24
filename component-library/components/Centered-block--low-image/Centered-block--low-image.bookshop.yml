@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Centered-block--low-image"
-  description:
-  icon:
+  label: "Block with bottom image"
+  description: A block of content with an image on the bottom
+  icon: vertical_align_bottom
   tags: []
 
 # Defines the structure of this component, as well as the default values
