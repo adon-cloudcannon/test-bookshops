@@ -101,4 +101,17 @@ content_blocks:
               disabled: false
     right_cols: 6
     forceRightOnTop: false
+  - _bookshop_name: Left-block--background-image
+    title: Forest Positive
+    seo_title: PaperCut Grows
+    subtitle: Leading the sustainability movement.
+    image: /uploads/logo.svg
+    button:
+      _bookshop_name: button
+      content:
+        text: Hello World!
+      style:
+        colour: primary
+        size: large
+        disabled: false
 ---
