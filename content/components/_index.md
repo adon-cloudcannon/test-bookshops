@@ -83,19 +83,22 @@ content_blocks:
     right_cols: 5
     forceRightOnTop: false
   - _bookshop_name: Logos-strip
-    title: Trusted by schools around the world
+    title: Hello World!
     logo1:
       _bookshop_name: logo
-      text: Wheatley Park School
-      image: /img/wheatley-purple.png
+      text: Hello World!
+      image: ''
+      alt: ''
     logo2:
       _bookshop_name: logo
-      text: St Martins School
-      image: /img/st-martins-pink.png
+      text: Hello World!
+      image: ''
+      alt: ''
     logo3:
       _bookshop_name: logo
-      text: Minehead Middle School
-      image: /img/minehead.png
+      text: Hello World!
+      image: ''
+      alt: ''
     logo4:
     logo5:
 
