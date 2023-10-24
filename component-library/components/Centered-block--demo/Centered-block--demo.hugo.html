@@ -1,5 +1,8 @@
 {{ $c := "c-Centered-block--demo" }}
 
+{{ $image_ext := path.Ext .Params.media }}
+{{ $img_extensions = slice "png" "jpg" "jpeg" "gif" "webp" "svg" }}
+
 <div class="{{ $c }}">
     <div class="content-wrapper">
         {{ partial "bookshop" .heading }}
@@ -12,7 +15,9 @@
 
             <div class="media-holder">
                 <div class="media elevation-medium">
-                    <img src="/img/desktop-trees.jpeg" />
+                    {{ if in $img_extensions $image_ext }}
+                        <img src="{{ .media }}" />
+                    {{ end }}                    
                 </div>
             </div>
         </div>
