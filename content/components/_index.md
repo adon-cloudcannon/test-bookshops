@@ -110,20 +110,24 @@ content_blocks:
         size, printers, operating systems, or BYOD devices.
       eyebrow: COST EFFECTIVE PRINT MANAGEMENT FOR YOUR SCHOOL
       simple_components: []
-    use: media
+    use: embed code
     media: /uploads/pexels-videos-2583475-1080p.mp4
     external_url: >-
       https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg
     embed_code: >-
-      <div class="wistia_responsive_padding" style="padding:56.25% 0 0
+      <script src="https://fast.wistia.com/embed/medias/bp4zcpcmh9.jsonp"
+      async></script><script
+      src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div
+      class="wistia_responsive_padding" style="padding:56.25% 0 0
       0;position:relative;"><div class="wistia_responsive_wrapper"
-      style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe
-      src="https://fast.wistia.net/embed/iframe/bp4zcpcmh9?seo=true&videoFoam=true"
-      title=" [Example Video] Wistia Video Essentials" allow="autoplay;
-      fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
-      class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%"
-      height="100%"></iframe></div></div>
-
-      <script src="https://fast.wistia.net/assets/external/E-v1.js"
-      async></script>
+      style="height:100%;left:0;position:absolute;top:0;width:100%;"><div
+      class="wistia_embed wistia_async_bp4zcpcmh9 seo=true videoFoam=true"
+      style="height:100%;position:relative;width:100%"><div
+      class="wistia_swatch"
+      style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity
+      200ms;width:100%;"><img
+      src="https://fast.wistia.com/embed/medias/bp4zcpcmh9/swatch"
+      style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
+      aria-hidden="true" onload="this.parentNode.style.opacity=1;"
+      /></div></div></div></div>
 ---
