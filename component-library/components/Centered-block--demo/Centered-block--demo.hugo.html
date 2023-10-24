@@ -1,7 +1,8 @@
 {{ $c := "c-Centered-block--demo" }}
 
-{{ $image_ext := path.Ext .media }}
+{{ $media_ext := path.Ext .media }}
 {{ $img_extensions := slice ".png" ".jpg" ".jpeg" ".gif" ".webp" ".svg" }}
+{{ $vid_extensions := slice ".mov" ".mp4" ".wmv" ".webm" ".avi" ".flv" }}
 
 <div class="{{ $c }}">
     <div class="content-wrapper">
@@ -16,8 +17,12 @@
             <div class="media-holder">
                 <div class="media elevation-medium">
                     {{ if ne .use_external_url true }}
-                        {{ if in $img_extensions $image_ext }}
+                        {{ if in $img_extensions $media_ext }}
                             <img src="{{ .media }}" />
+                        {{ else if in $vid_extensions $media_ext }}
+                            <video>
+                                <source src="">
+                            </video>
                         {{ end }}      
                     {{ else }}
                         {{ if ne .external_url "" }}              
