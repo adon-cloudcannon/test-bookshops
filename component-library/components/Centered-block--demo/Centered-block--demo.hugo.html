@@ -20,11 +20,14 @@
                         {{ if in $img_extensions $media_ext }}
                             <img src="{{ .media }}" />
                         {{ else if in $vid_extensions $media_ext }}
-                            <video>
+                            <video autoplay>
                                 <source src="{{ .media }}">
                             </video>
                         {{ end }}      
                     {{ else }}
+                        {{ < code > }}
+                            {{ .embed_code }}
+                        {{ </ code > }}
                         {{ if ne .external_url "" }}              
                             Put the external content here
                         {{ end }}

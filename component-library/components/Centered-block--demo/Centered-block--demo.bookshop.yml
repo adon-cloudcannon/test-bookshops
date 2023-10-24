@@ -23,5 +23,7 @@ _inputs:
     type: file
   external_url:
     type: text
+  embed_code:
+    type: textarea
   use_external_url:
     type: switch
