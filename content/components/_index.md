@@ -101,11 +101,14 @@ content_blocks:
       alt: ''
     logo4:
     logo5:
-
   - _bookshop_name: Centered-block--demo
     heading:
       _bookshop_name: Left-right-block-component__heading-text
       title: Making printing easy and affordable for schools all over the globe
-      text: Deliver simpler-than-ever printing that just works – no matter your size, printers, operating systems, or BYOD devices.
+      text: >-
+        Deliver simpler-than-ever printing that just works – no matter your
+        size, printers, operating systems, or BYOD devices.
       eyebrow: COST EFFECTIVE PRINT MANAGEMENT FOR YOUR SCHOOL
+      simple_components: []
+    media: /uploads/marek-piwnicki-af6c85b5bok-unsplash.jpg
 ---
