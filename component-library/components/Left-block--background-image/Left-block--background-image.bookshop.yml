@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Left-block--background-image"
+  label: "Hero banner"
   description:
-  icon:
+  icon: campaign
   tags: []
 
 # Defines the structure of this component, as well as the default values
