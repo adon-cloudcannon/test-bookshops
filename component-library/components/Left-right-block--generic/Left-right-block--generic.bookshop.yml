@@ -10,9 +10,9 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:  
   heading: ""
-  left: bookshop:structure:left-right-block
+  left: [bookshop:structure:left-right-block]
   left_cols: 5
-  right: bookshop:structure:left-right-block 
+  right: [bookshop:structure:left-right-block]
   right_cols: 6
   forceRightOnTop: false
 
@@ -22,9 +22,9 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   left:
-    type: object
+    type: array
   right:
-    type: object
+    type: array
   left_cols: 
     type: range
     options:

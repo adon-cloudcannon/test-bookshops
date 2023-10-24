@@ -1,5 +1,6 @@
 .c-Left-right-block--generic {
-    --left-cols: 2;
+    --left-cols: 2; // default
+    --right-cols: 2; // default
     
     background: var(--primary-grey-050);
     min-width: 480px;
@@ -40,13 +41,8 @@
                     order:0!important;
                 }
 
-                /*.left--5{ grid-column: 1 / span 5 }
-                .left--6{ grid-column: 1 / span 6 }*/
-
                 .left{ grid-column: 1 / span var(--left-cols) }
-
-                .right--5{ grid-column: span 5 / 13 }
-                .right--6{ grid-column: span 6 / 13 }
+                .right{ grid-column: span var(--right-cols) / 13 }
             }   
         }
     }

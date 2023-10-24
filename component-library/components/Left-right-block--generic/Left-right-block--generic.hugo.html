@@ -1,16 +1,16 @@
 {{ $c := "c-Left-right-block--generic" }}
 
-<div class="{{ $c }}" style="--left-cols: {{ .left_cols }}">
+<div class="{{ $c }}" style="--left-cols: {{ .left_cols }}; --right-cols: {{ .right_cols }}">
     <div class="content-wrapper">
         
         {{ if .left }}
-            <div class="left left--{{ .left_cols }}">
+            <div class="left">
                 {{ partial "bookshop" .left }}
             </div>
         {{ end }}
     
         {{ if .right }}
-            <div class="right right--{{ .right_cols }} {{ if (eq .forceRightOnTop true) }}forceRightOnTop{{ end }}">
+            <div class="right {{ if (eq .forceRightOnTop true) }}forceRightOnTop{{ end }}">
                 {{ partial "bookshop" .right }}
             </div>
         {{ end }}

@@ -2,33 +2,17 @@
 spec:
   structures:
     - content_blocks
-  label: "Centered-block--demo"
+  label: "Adon"
   description:
   icon:
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  heading: bookshop:Left-right-block-component__heading-text
-  use: "media"
-  media: ""
-  embed_code: ""  
+  text: "Hello World!"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  media:
-    label: Uploaded media
-    type: file
-  embed_code:
-    label: Embed code
-    type: textarea
-  use:
-    label: Media
-    type: choice
-    options:
-      values:
-        - media
-        - embed code

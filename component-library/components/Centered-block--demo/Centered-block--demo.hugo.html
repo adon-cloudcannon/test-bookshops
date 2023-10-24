@@ -1,7 +1,6 @@
 {{ $c := "c-Centered-block--demo" }}
 
 {{ $media_ext := "" }}
-{{ $media_path := "" }}
 {{ $img_extensions := slice ".png" ".jpg" ".jpeg" ".gif" ".webp" ".svg" }}
 {{ $vid_extensions := slice ".mov" ".mp4" ".wmv" ".webm" ".avi" ".flv" }}
 
@@ -19,24 +18,17 @@
                 <div class="media elevation-medium">
                     {{ if eq .use "media" }}
                         {{ $media_ext = path.Ext .media }}
-                        {{ $media_path = .media }}
-                    {{ else if eq .use "external url" }}
-                        {{ $media_ext = path.Ext .external_url }}
-                        {{ $media_path = .external_url }}
-                    {{ end }}
-                    
-                    {{ if eq .use "embed code" }}
-                        {{ if ne .embed_code "" }}
-                            {{ .embed_code | safeHTML }}
-                        {{ end }}                          
-                    {{ else if ne $media_ext "" }}
                         {{ if in $img_extensions $media_ext }}
-                            <img src="{{ $media_path }}" />
+                            <img src="{{ .media }}" />
                         {{ else if in $vid_extensions $media_ext }}
                             <video controls>
-                                <source src="{{ $media_path }}">
+                                <source src="{{ .media }}">
                             </video>
-                        {{ end }}    
+                        {{ end }}                                        
+                    {{ else if eq .use "embed code" }}
+                        {{ if ne .embed_code "" }}
+                            {{ .embed_code | safeHTML }}
+                        {{ end }}                                                  
                     {{ end }}                    
                 </div>
             </div>
