@@ -110,5 +110,7 @@ content_blocks:
         size, printers, operating systems, or BYOD devices.
       eyebrow: COST EFFECTIVE PRINT MANAGEMENT FOR YOUR SCHOOL
       simple_components: []
-    media: /uploads/marek-piwnicki-af6c85b5bok-unsplash.jpg
+    media: /uploads/pexels-videos-2583475-1080p.mp4
+    external_url: ''
+    use_external_url: false
 ---
