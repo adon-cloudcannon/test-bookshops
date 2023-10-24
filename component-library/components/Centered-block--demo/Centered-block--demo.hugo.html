@@ -25,9 +25,7 @@
                             </video>
                         {{ end }}      
                     {{ else }}
-                        {{< code "html" >}}
-                            {{ .embed_code }}
-                        {{</ code >}}
+                        {{ .embed_code | safeHTML }}
                         {{ if ne .external_url "" }}              
                             Put the external content here
                         {{ end }}
