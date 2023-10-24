@@ -28,7 +28,7 @@ content_blocks:
       aria-hidden="true" onload="this.parentNode.style.opacity=1;"
       /></div></div></div></div>
   - _bookshop_name: Logos-strip
-    title: Hello World!
+    title: Trusted by schools around the world
     logos:
       - _bookshop_name: logo
         text: Wheatley Park School
