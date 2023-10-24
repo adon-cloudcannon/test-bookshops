@@ -21,7 +21,7 @@
                             <img src="{{ .media }}" />
                         {{ else if in $vid_extensions $media_ext }}
                             <video>
-                                <source src="">
+                                <source src="{{ .media }}">
                             </video>
                         {{ end }}      
                     {{ else }}
