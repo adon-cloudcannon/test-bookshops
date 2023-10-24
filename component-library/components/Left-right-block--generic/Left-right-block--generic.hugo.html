@@ -5,13 +5,17 @@
         
         {{ if .left }}
             <div class="left">
-                {{ partial "bookshop" .left }}
+                {{ range .left }}
+                    {{ partial "bookshop" . }}
+                {{ end }}
             </div>
         {{ end }}
     
         {{ if .right }}
             <div class="right {{ if (eq .forceRightOnTop true) }}forceRightOnTop{{ end }}">
-                {{ partial "bookshop" .right }}
+                {{ range .right }}
+                    {{ partial "bookshop" . }}
+                {{ end }}
             </div>
         {{ end }}
 
