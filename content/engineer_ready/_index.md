@@ -109,7 +109,7 @@ content_blocks:
     button:
       _bookshop_name: button
       content:
-        text: Hello World!
+        text: Get PaperCut Grows
       style:
         colour: primary
         size: large
