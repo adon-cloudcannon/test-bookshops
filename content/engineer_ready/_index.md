@@ -71,5 +71,34 @@ content_blocks:
         eyebrow: What is Forest Positive printing
         simple_components: []
     right_cols: 6
+    forceRightOnTop: true
+  - _bookshop_name: Left-right-block--generic
+    left:
+      - _bookshop_name: Left-right-block-component__image
+        image: /img/woman-on-bench..png
+    left_cols: 5
+    right:
+      - _bookshop_name: Left-right-block-component__heading-text
+        title: Find out more about what’s driving the Forest Positive movement
+        text: >-
+          Some copy here about trees, climate change, deforestation, benefits of
+          planting and/or similar. It shouldn’t be too long, as we expect this
+          section to not be more than this amount of lines. But there’s room for
+          a bit more. Maybe another line.
+        eyebrow: ''
+        simple_components:
+          - _bookshop_name: unordered-list
+            items:
+              - First link here. A title with a hyperlink behind.
+              - Link here. A title with a hyperlink behind.
+              - Link here. A title with a hyperlink behind.
+          - _bookshop_name: button
+            content:
+              text: Learn more about Forest Positive
+            style:
+              colour: primary
+              size: large
+              disabled: false
+    right_cols: 6
     forceRightOnTop: false
 ---
