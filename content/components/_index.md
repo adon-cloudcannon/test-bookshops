@@ -80,6 +80,13 @@ content_blocks:
       /></div></div></div></div>
   - _bookshop_name: Logos-strip
     title: Hello World!
-    logos: []
-
+    logos:
+      - _bookshop_name: logo
+        text: Some school
+        image: /img/minehead.png
+        alt: ''
+      - _bookshop_name: logo
+        text: Another school
+        image: /img/st-martins-pink.png
+        alt: ''
 ---
