@@ -1,0 +1,87 @@
+.c-Centered-block--demo {
+    background: var(--core-white);
+    min-width: 480px;
+    display:grid;    
+    grid-template-columns: var(--twelve-column-grid);
+    row-gap:32px;
+    padding:96px 0;
+
+    .content-wrapper{
+        grid-column: 2 / 14;
+          
+        text-align:center;   
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+
+        .c-Left-right-block-component__heading-text{
+            max-width:660px;
+            align-items:center;
+
+            p.eyebrow{
+                font-weight:700;
+                letter-spacing: 1.5px;
+                line-height:1.5;
+            }
+        }
+    }
+
+    .inner-grid{
+        display:grid;
+        grid-template-columns:var(--twelve-column-grid);
+        grid-column: 1 / 15;
+
+        .image-wrapper{
+            grid-column: 1 / 15;
+            display:grid;
+            grid-template: 1fr / repeat(10, 1fr);
+            justify-content:center;
+            position:relative;
+    
+            img{
+                grid-column: 1 / 11;  
+                grid-row:1 / 8;         
+            }
+    
+            img.tablet{ display:none; }
+            img.desktop{ display:none; }
+    
+            .media-holder{        
+                position:absolute;
+                inset:0 0 0 0;
+                display:grid;
+                grid-template: repeat(7, 1fr) / repeat(10, 1fr);
+    
+                .media{ 
+                    border-radius:7.805px;
+                    grid-column: 2 / 10;
+                    grid-row: 2 / 7;
+                    margin:-3px;
+                    overflow:hidden;
+                }
+            }            
+        }
+
+        @media screen and (min-width:481px){ 
+            .image-wrapper{                                                        
+                grid-column: 2 / 14;                  
+                img.mobile{ display:none; }      
+            }
+                    
+            /* Tablet view */
+            @media screen and (max-width:768px){     
+                .image-wrapper{         
+                    img.tablet{ display:block; }                     
+                }
+            }      
+    
+            /* Desktop view */
+            @media screen and (min-width:769px){ 
+                grid-column: 2 / 14;
+                .image-wrapper{  
+                    img.desktop{ display:block; }                                        
+                }
+            }   
+        }
+    }    
+}

@@ -1,0 +1,20 @@
+{{ $c := "c-Centered-block--demo" }}
+
+<div class="{{ $c }}">
+    <div class="content-wrapper">
+        {{ partial "bookshop" .heading }}
+    </div>
+    <div class="inner-grid">
+        <div class="image-wrapper">
+            <img class="mobile" src="/img/demo-background-mobile.svg" />
+            <img class="tablet" src="/img/demo-background-tablet.svg" />
+            <img class="desktop" src="/img/demo-background-desktop.svg" />
+
+            <div class="media-holder">
+                <div class="media elevation-medium">
+                    <img src="/img/desktop-trees.jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

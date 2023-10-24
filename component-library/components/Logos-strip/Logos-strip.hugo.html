@@ -10,8 +10,17 @@
                 {{ partial "bookshop" (slice "logo" (dict "text" "Logo")) }}
             {{ end }}
 
-            {{ partial "bookshop" .logo2 }}       
-            {{ partial "bookshop" .logo3 }}       
+            {{ if .logo2 }}
+                {{ partial "bookshop" .logo2 }}       
+            {{ else }}
+                {{ partial "bookshop" (slice "logo" (dict "text" "Logo")) }}
+            {{ end }}
+            
+            {{ if .logo3 }}
+                {{ partial "bookshop" .logo3 }}       
+            {{ else }}
+                {{ partial "bookshop" (slice "logo" (dict "text" "Logo")) }}
+            {{ end }}
 
             {{ if .logo4 }}
                 {{ partial "bookshop" .logo4 }}       
