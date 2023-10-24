@@ -15,10 +15,14 @@
 
             <div class="media-holder">
                 <div class="media elevation-medium">
-                    {{ if eq .use_external_url true }}
+                    {{ if ne .use_external_url true }}
                         {{ if in $img_extensions $image_ext }}
                             <img src="{{ .media }}" />
-                        {{ end }}                    
+                        {{ end }}      
+                    {{ else }}
+                        {{ if ne .external_url "" }}              
+                            Put the external content here
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>
