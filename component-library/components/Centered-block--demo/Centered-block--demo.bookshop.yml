@@ -24,4 +24,4 @@ _inputs:
   external_url:
     type: text
   use_external_url:
-    type: boolean
+    type: switch
