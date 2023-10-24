@@ -112,8 +112,6 @@ content_blocks:
       simple_components: []
     use: embed code
     media: /uploads/pexels-videos-2583475-1080p.mp4
-    external_url: >-
-      https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg
     embed_code: >-
       <script src="https://fast.wistia.com/embed/medias/bp4zcpcmh9.jsonp"
       async></script><script
