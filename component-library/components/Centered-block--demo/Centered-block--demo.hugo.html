@@ -33,7 +33,7 @@
                         {{ if in $img_extensions $media_ext }}
                             <img src="{{ $media_path }}" />
                         {{ else if in $vid_extensions $media_ext }}
-                            <video autoplay>
+                            <video controls>
                                 <source src="{{ $media_path }}">
                             </video>
                         {{ end }}    
