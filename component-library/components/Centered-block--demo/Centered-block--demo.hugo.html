@@ -29,7 +29,7 @@
                         {{ if ne .embed_code "" }}
                             {{ .embed_code | safeHTML }}
                         {{ end }}                          
-                    {{ else if $media_ext ne "" }}
+                    {{ else if ne $media_ext "" }}
                         {{ if in $img_extensions $media_ext }}
                             <img src="{{ .media }}" />
                         {{ else if in $vid_extensions $media_ext }}
