@@ -7,9 +7,9 @@
             {{ if .logo1 }}            
                 {{ partial "bookshop" .logo1 }}            
             {{ else }}
-                {{ partial "bookshop" (slice "logo") }}
+                {{ partial "bookshop" (slice "logo" (dict "text" "Logo")) }}
             {{ end }}
-            
+
             {{ partial "bookshop" .logo2 }}       
             {{ partial "bookshop" .logo3 }}       
 
