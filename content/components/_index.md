@@ -101,4 +101,12 @@ content_blocks:
         text: Hello World!
         image: ''
         alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
 ---
