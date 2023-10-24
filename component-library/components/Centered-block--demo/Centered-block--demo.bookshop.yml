@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Centered-block--demo"
-  description:
-  icon:
+  label: Centered demo block
+  description: 
+  icon: smart_display
   tags: []
 
 # Defines the structure of this component, as well as the default values

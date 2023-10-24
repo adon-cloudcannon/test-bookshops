@@ -4,7 +4,7 @@ spec:
     - simple_components
   label: "List"
   description: 
-  icon:
+  icon: format_list_bulleted
   tags: []
 
 # Defines the structure of this component, as well as the default values
