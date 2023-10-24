@@ -110,6 +110,20 @@ content_blocks:
         size, printers, operating systems, or BYOD devices.
       eyebrow: COST EFFECTIVE PRINT MANAGEMENT FOR YOUR SCHOOL
       simple_components: []
+    use: media
     media: /uploads/pexels-videos-2583475-1080p.mp4
-    external_url: https://cloudcannon.wistia.com/medias/bp4zcpcmh9
+    external_url: >-
+      https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg
+    embed_code: >-
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 0
+      0;position:relative;"><div class="wistia_responsive_wrapper"
+      style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe
+      src="https://fast.wistia.net/embed/iframe/bp4zcpcmh9?seo=true&videoFoam=true"
+      title=" [Example Video] Wistia Video Essentials" allow="autoplay;
+      fullscreen" allowtransparency="true" frameborder="0" scrolling="no"
+      class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%"
+      height="100%"></iframe></div></div>
+
+      <script src="https://fast.wistia.net/assets/external/E-v1.js"
+      async></script>
 ---
