@@ -30,7 +30,6 @@ content_blocks:
         size: large
         disabled: false
   - _bookshop_name: Left-right-block--generic
-    heading: ''
     left:
       - _bookshop_name: Left-right-block-component__heading-text
         title: We plant trees to counteract your printing’s impact
