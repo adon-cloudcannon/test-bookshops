@@ -5,25 +5,25 @@
     min-height:var(--min-height);
     min-width:480px;
     display:grid;
+    grid-template-columns: var(--twelve-column-grid);
     position:relative;
 
     .veil { 
         position: absolute;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 51.88%, rgba(0, 0, 0, 0.00) 99.96%);
-        inset:0 50% 0 0;
+        inset:0 0 0 0;
         z-index:0;
     }
     
     .content{     
         z-index: 1;
-        grid-column: 1 / 15; 
-        min-height:417px;   
+        grid-column: 2 / 14; 
         display:flex;     
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 24px;
-        padding: 96px 16px;
+        padding: 96px 0;
         text-align:center;
 
         h1, h2, h3{ color: var(--core-white); }
@@ -41,16 +41,14 @@
             /* h2 hidden by default, only for tablet and desktop styles */
             h2{ display:block; }
             h3{ display:none; }
-            img{ width: 307px; }
         }
 
         /* Tablet view */
         @media screen and (max-width:768px){
             background-image:url("/img/tablet-trees.jpeg");        
             
+            .veil{ inset:0 30% 0 0; }
             .content{
-                padding-left: 24px;            
-                padding-right: 24px;
                 max-width:548px;
 
                 h2{ max-width:463px; }
@@ -61,11 +59,8 @@
         @media screen and (min-width:769px){
             background-image:url("/img/desktop-trees.jpeg");
             
+            .veil{ inset:0 50% 0 0; }
             .content{
-                padding-left: 107px;            
-                padding-right: 107px;
-                max-width:627px;
-
                 h2{ max-width:413px; }
             }     
         }   
