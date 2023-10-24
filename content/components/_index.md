@@ -34,20 +34,20 @@ content_blocks:
       - _bookshop_name: Left-right-block-component__heading-text
         title: We plant trees to counteract your printing’s impact
         text: >-
-            Forest Positive printing is extending the Forest Positive evolution into
-            the print space. It allows organisations to actively contribute to more
-            trees being planted than those pulped into printing paper. Forest
-            Positive printing moves beyond reducing waste and transforms essential
-            business printing from a negative environmental footprint to a positive
-            force for reforestation and ecological renewal.
+          Forest Positive printing is extending the Forest Positive evolution
+          into the print space. It allows organisations to actively contribute
+          to more trees being planted than those pulped into printing paper.
+          Forest Positive printing moves beyond reducing waste and transforms
+          essential business printing from a negative environmental footprint to
+          a positive force for reforestation and ecological renewal.
         eyebrow: What is Forest Positive printing
         simple_components: []
     left_cols: 6
     right:
       - _bookshop_name: Left-right-block-component__quote
         text: >-
-            What we are doing to the forests of the world is but a mirror reflection
-            of what we are doing to ourselves and to one another.
+          What we are doing to the forests of the world is but a mirror
+          reflection of what we are doing to ourselves and to one another.
         author: Chris Maser
     right_cols: 5
     forceRightOnTop: false
@@ -78,4 +78,31 @@ content_blocks:
       style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
       aria-hidden="true" onload="this.parentNode.style.opacity=1;"
       /></div></div></div></div>
+  - _bookshop_name: Logos-strip
+    title: Hello World!
+    logos:
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
+      - _bookshop_name: logo
+        text: Hello World!
+        image: ''
+        alt: ''
 ---
