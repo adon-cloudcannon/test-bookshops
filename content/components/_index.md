@@ -111,6 +111,6 @@ content_blocks:
       eyebrow: COST EFFECTIVE PRINT MANAGEMENT FOR YOUR SCHOOL
       simple_components: []
     media: /uploads/pexels-videos-2583475-1080p.mp4
-    external_url: ''
+    external_url: https://cloudcannon.wistia.com/medias/bp4zcpcmh9
     use_external_url: false
 ---
