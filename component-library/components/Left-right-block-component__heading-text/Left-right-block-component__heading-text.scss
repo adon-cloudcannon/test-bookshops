@@ -1,4 +1,6 @@
-.c-Left-right-block-component__heading-text {           
+.c-Left-right-block-component__heading-text {    
+    grid-column:1/13;
+           
     display:flex;
     flex-direction:column;
     align-items: flex-start;

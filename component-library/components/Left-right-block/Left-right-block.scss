@@ -7,9 +7,9 @@
     .content-wrapper{
         grid-column: 2 / 14;
         padding:96px 16px;
-        display:flex;        
-        flex-direction:column;
-        gap:48px;
+        display:grid;        
+        grid-template-columns:repeat(12, 1fr);
+        row-gap:48px;
 
         .content{            
             display:flex;
@@ -56,7 +56,7 @@
 
                 .image{ 
                     order:0;
-                    
+
                     &__right{ order:1; }
                 }
                 

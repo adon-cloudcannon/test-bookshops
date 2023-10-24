@@ -1,4 +1,6 @@
 .c-Left-right-block-component__quote {
+    grid-column:1/13;
+    
     border-top: 3px solid var(--primary-brand-100);
     border-bottom: 3px solid var(--primary-brand-100);
     display: flex;
