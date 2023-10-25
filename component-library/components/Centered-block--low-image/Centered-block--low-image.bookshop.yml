@@ -11,7 +11,6 @@ spec:
 blueprint:
   title: "Hello World!"
   text: ""
-  image: ""
   show_button: true
   button: bookshop:button!  
 
