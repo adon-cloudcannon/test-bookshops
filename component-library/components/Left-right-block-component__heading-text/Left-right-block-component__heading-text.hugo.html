@@ -7,7 +7,7 @@
     {{ end }}
     <h2>{{ .title }}</h2>
 
-    <p>{{ .text }}</p>
+    <p>{{ .text | safeHTML }}</p>
 
     {{ range .simple_components }}
         {{ partial "bookshop" . }}
