@@ -3,11 +3,11 @@ content_blocks:
   - _bookshop_name: Centered-block--demo
     heading:
       _bookshop_name: Left-right-block-component__heading-text
+      eyebrow: Cost effective print management for your school
       title: Making printing easy and affordable for schools
       text: >-
         Deliver simpler-than-ever printing that just works – no matter your
         size, printers, operating systems, or BYOD devices.
-      eyebrow: Cost effective print management for your school
       simple_components: []
     use: embed code
     media: ''
@@ -51,6 +51,7 @@ content_blocks:
         image: /img/wheatley-blue.png
         alt: ''
   - _bookshop_name: Left-right-block--generic
+    background: white
     left:
       - _bookshop_name: Left-right-block-component__quote
         text: >-
@@ -60,6 +61,7 @@ content_blocks:
     left_cols: 5
     right:
       - _bookshop_name: Left-right-block-component__heading-text
+        eyebrow: What is Forest Positive printing
         title: We plant trees to counteract your printing's impact
         text: >-
           Forest Positive printing is extending the Forest Positive evolution
@@ -68,24 +70,24 @@ content_blocks:
           Forest Positive printing moves beyond reducing waste and transforms
           essential business printing from a negative environmental footprint to
           a positive force for reforestation and ecological renewal.
-        eyebrow: What is Forest Positive printing
         simple_components: []
     right_cols: 6
     forceRightOnTop: true
   - _bookshop_name: Left-right-block--generic
+    background: grey
     left:
       - _bookshop_name: Left-right-block-component__image
         image: /img/woman-on-bench..png
     left_cols: 5
     right:
       - _bookshop_name: Left-right-block-component__heading-text
+        eyebrow: ''
         title: Find out more about what’s driving the Forest Positive movement
         text: >-
           Some copy here about trees, climate change, deforestation, benefits of
           planting and/or similar. It shouldn’t be too long, as we expect this
           section to not be more than this amount of lines. But there’s room for
           a bit more. Maybe another line.
-        eyebrow: ''
         simple_components:
           - _bookshop_name: unordered-list
             items:
@@ -120,7 +122,6 @@ content_blocks:
       What is Forest Positive printing? An evolution of the print space, putting
       but back more trees than get pulped into printer paper. Doing what’s right
       for the environment.
-    image: ''
     show_button: true
     button:
       _bookshop_name: button
@@ -130,4 +131,5 @@ content_blocks:
         colour: primary
         size: large
         disabled: false
+    image: ''
 ---
