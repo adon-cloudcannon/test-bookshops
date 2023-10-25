@@ -1,5 +1,15 @@
 ---
 content_blocks:
+  - _bookshop_name: Centered-block--demo
+    heading:
+      _bookshop_name: Left-right-block-component__heading-text
+      eyebrow: Cost effective print management for your school
+      title: Making printing easy and affordable for schools
+      text: >-
+        Deliver simpler-than-ever printing that just works – no matter your
+        size, printers, operating systems, or BYOD devices.
+      simple_components: []
+    media: https://lottie.host/6f4ee854-3625-4849-8985-e423a0752949/hZWZsrb0zk.json
   - _bookshop_name: Logos-strip
     title: Trusted by schools around the world
     logos:
