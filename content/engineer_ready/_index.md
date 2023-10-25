@@ -9,8 +9,8 @@ content_blocks:
         Deliver simpler-than-ever printing that just works – no matter your
         size, printers, operating systems, or BYOD devices.
       simple_components: []
-    use: embed code
-    media: ''
+    use: media
+    media: https://cloudcannon.wistia.com/medias/bp4zcpcmh9
     embed_code: >-
       <script src="https://fast.wistia.com/embed/medias/bp4zcpcmh9.jsonp"
       async></script><script
