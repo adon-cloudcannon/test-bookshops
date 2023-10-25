@@ -16,9 +16,9 @@
 
             <div class="media-holder">
                 <div class="media elevation-medium">
-                    {{/*  {{ if eq .use "media" }}  */}}
                     {{ if strings.Contains .media "lottie" }}
-                        Lottie file
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="{{ .media }}" background="transparent" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop controls autoplay></dotlottie-player>
                     {{ else if strings.Contains .media "wistia" }}
                         {{ $parts := split .media "/" }}
                         {{ range last 1 $parts }}                        
@@ -42,11 +42,7 @@
                             <video controls>
                                 <source src="{{ .media }}">
                             </video>
-                        {{ end }}                                        
-                    {{/*  {{ else if eq .use "embed code" }}  */}}
-                        {{/*  {{ if ne .embed_code "" }}  */}}
-                            {{/*  {{ .embed_code | safeHTML }}  */}}
-                        {{/*  {{ end }}                                                    */}}
+                        {{ end }}                                                       
                     {{ end }}                    
                 </div>
             </div>
