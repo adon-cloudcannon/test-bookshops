@@ -1,8 +1,8 @@
 {{ $c := "c-Logos-strip" }}
 
 {{ $logos_array := .logos }}
-
 {{ $len := .logos | len }}
+
 {{ if lt $len 3 }}
     {{ $diff := sub 3 $len }}
     {{ range seq $diff }}
@@ -15,10 +15,7 @@
         <p class="title">{{ .title }}</p>
         <div class="logos-row">
             {{ range $index, $element := $logos_array }}
-                {{ partial "bookshop" (slice "logo" $element) }}
-                {{/*  {{ if eq $index 4 }}
-                    {{ break }}
-                {{ end }}  */}}
+                {{ partial "bookshop" (slice "logo" $element) }}                
             {{ end }}
         </div>
     </div>

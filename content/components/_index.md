@@ -89,4 +89,20 @@ content_blocks:
         text: Another school
         image: /img/st-martins-pink.png
         alt: ''
+      - _bookshop_name: logo
+        text: Another school
+        image: /img/st-martins-pink.png
+        alt: ''
+      - _bookshop_name: logo
+        text: Another school
+        image: /img/st-martins-pink.png
+        alt: ''
+      - _bookshop_name: logo
+        text: Another school
+        image: /img/st-martins-pink.png
+        alt: ''
+      - _bookshop_name: logo
+        text: Another school
+        image: /img/st-martins-pink.png
+        alt: ''
 ---
