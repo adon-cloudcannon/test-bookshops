@@ -47,12 +47,13 @@ content_blocks:
         eyebrow: What is Forest Positive printing
         title: We plant trees to counteract your printing's impact
         text: >-
-          Forest Positive printing is extending the Forest Positive evolution
-          into the print space. It allows organisations to actively contribute
-          to more trees being planted than those pulped into printing paper.
-          Forest Positive printing moves beyond reducing waste and transforms
-          essential business printing from a negative environmental footprint to
-          a positive force for reforestation and ecological renewal.
+          <p><strong>Forest Positive printing</strong> is extending the Forest
+          Positive evolution into the print space. It allows organisations to
+          actively contribute to more trees being planted than those pulped into
+          printing paper. Forest Positive printing moves beyond reducing waste
+          and transforms essential business printing from a negative
+          environmental footprint to a positive force for reforestation and
+          ecological renewal.</p>
         simple_components: []
     right_cols: 6
     forceRightOnTop: true
