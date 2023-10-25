@@ -131,5 +131,4 @@ content_blocks:
         colour: primary
         size: large
         disabled: false
-    image: ''
 ---
