@@ -1,0 +1,696 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs: {}
+_select_data: {}
+_structures:
+  content_blocks:
+    style: modal
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: Centered-block--demo
+          heading:
+          use: media
+          media: ''
+          embed_code: ''
+        label: Centered demo block
+        description:
+        icon: smart_display
+        tags: []
+        _inputs:
+          media:
+            type: file
+            label: Uploaded media
+            cascade: true
+          embed_code:
+            type: textarea
+            label: Embed code
+            cascade: true
+          use:
+            type: choice
+            options:
+              allow_empty: true
+              values:
+                - media
+                - embed code
+            label: Media
+            cascade: true
+          heading:
+            type: object
+            options:
+              structures: >-
+                _structures._bookshop_single_component_eftrightblockcomponentheadingtext
+            cascade: true
+      - value:
+          _bookshop_name: Centered-block--low-image
+          title: Hello World!
+          text: ''
+          show_button: true
+          button:
+            _bookshop_name: button
+            content:
+              text: Hello World!
+            style:
+              colour: primary
+              size: large
+              disabled: false
+        label: Block with bottom image
+        description: A block of content with an image on the bottom
+        icon: vertical_align_bottom
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          button:
+            type: object
+            options:
+              structures: _structures._bookshop_single_component_button
+            cascade: true
+      - value:
+          _bookshop_name: Left-block--background-image
+          title: Forest Positive
+          seo_title: PaperCut Grows
+          subtitle: Leading the sustainability movement.
+          image: ''
+          button:
+            _bookshop_name: button
+            content:
+              text: Hello World!
+            style:
+              colour: primary
+              size: large
+              disabled: false
+        label: Hero banner
+        description:
+        icon: campaign
+        tags: []
+        _inputs:
+          image:
+            type: auto
+            label: Logo
+            cascade: true
+          title:
+            type: auto
+            comment: Adding a logo will hide the title input
+            hidden: image
+            cascade: true
+          seo_title:
+            type: auto
+            comment: >-
+              SEO title will be used instead of title if a logo has been
+              uploaded
+            hidden: '!image'
+            cascade: true
+          button:
+            type: object
+            options:
+              structures: _structures._bookshop_single_component_button
+            cascade: true
+      - value:
+          _bookshop_name: Left-right-block--generic
+          background: white
+          left: []
+          left_cols: 5
+          right: []
+          right_cols: 6
+          forceRightOnTop: false
+        label: Left-right block
+        description:
+        icon: switch_left
+        tags: []
+        _inputs:
+          background:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - white
+                - grey
+            cascade: true
+          left:
+            type: array
+            options:
+              structures: _structures.left-right-block
+            cascade: true
+          right:
+            type: array
+            options:
+              structures: _structures.left-right-block
+            cascade: true
+          left_cols:
+            type: range
+            options:
+              min: 5
+              max: 6
+              step: 1
+            cascade: true
+          right_cols:
+            type: range
+            options:
+              min: 5
+              max: 6
+              step: 1
+            cascade: true
+      - value:
+          _bookshop_name: Logos-strip
+          title: Hello World!
+          logos:
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+        label: Logo strip
+        description:
+        icon: view_column
+        tags: []
+        _inputs:
+          logos:
+            type: array
+            options:
+              structures: _structures._bookshop_single_component_logo
+            cascade: true
+      - value:
+          _bookshop_name: Centered-block--demo
+          heading:
+          use: media
+          media: ''
+          embed_code: ''
+        label: Centered demo block
+        description:
+        icon: smart_display
+        tags: []
+        _inputs:
+          media:
+            type: file
+            label: Uploaded media
+            cascade: true
+          embed_code:
+            type: textarea
+            label: Embed code
+            cascade: true
+          use:
+            type: choice
+            options:
+              allow_empty: true
+              values:
+                - media
+                - embed code
+            label: Media
+            cascade: true
+          heading:
+            type: object
+            options:
+              structures: >-
+                _structures._bookshop_single_component_eftrightblockcomponentheadingtext
+            cascade: true
+      - value:
+          _bookshop_name: Centered-block--low-image
+          title: Hello World!
+          text: ''
+          show_button: true
+          button:
+            _bookshop_name: button
+            content:
+              text: Hello World!
+            style:
+              colour: primary
+              size: large
+              disabled: false
+        label: Block with bottom image
+        description: A block of content with an image on the bottom
+        icon: vertical_align_bottom
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          button:
+            type: object
+            options:
+              structures: _structures._bookshop_single_component_button
+            cascade: true
+      - value:
+          _bookshop_name: Left-block--background-image
+          title: Forest Positive
+          seo_title: PaperCut Grows
+          subtitle: Leading the sustainability movement.
+          image: ''
+          button:
+            _bookshop_name: button
+            content:
+              text: Hello World!
+            style:
+              colour: primary
+              size: large
+              disabled: false
+        label: Hero banner
+        description:
+        icon: campaign
+        tags: []
+        _inputs:
+          image:
+            type: auto
+            label: Logo
+            cascade: true
+          title:
+            type: auto
+            comment: Adding a logo will hide the title input
+            hidden: image
+            cascade: true
+          seo_title:
+            type: auto
+            comment: >-
+              SEO title will be used instead of title if a logo has been
+              uploaded
+            hidden: '!image'
+            cascade: true
+          button:
+            type: object
+            options:
+              structures: _structures._bookshop_single_component_button
+            cascade: true
+      - value:
+          _bookshop_name: Left-right-block--generic
+          background: white
+          left: []
+          left_cols: 5
+          right: []
+          right_cols: 6
+          forceRightOnTop: false
+        label: Left-right block
+        description:
+        icon: switch_left
+        tags: []
+        _inputs:
+          background:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - white
+                - grey
+            cascade: true
+          left:
+            type: array
+            options:
+              structures: _structures.left-right-block
+            cascade: true
+          right:
+            type: array
+            options:
+              structures: _structures.left-right-block
+            cascade: true
+          left_cols:
+            type: range
+            options:
+              min: 5
+              max: 6
+              step: 1
+            cascade: true
+          right_cols:
+            type: range
+            options:
+              min: 5
+              max: 6
+              step: 1
+            cascade: true
+      - value:
+          _bookshop_name: Logos-strip
+          title: Hello World!
+          logos:
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+            - _bookshop_name: logo
+              text: Hello World!
+              image: ''
+              alt: ''
+        label: Logo strip
+        description:
+        icon: view_column
+        tags: []
+        _inputs:
+          logos:
+            type: array
+            options:
+              structures: _structures._bookshop_single_component_logo
+            cascade: true
+  left-right-block:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: Left-right-block-component__heading-text
+          eyebrow: ''
+          title: Hello World!
+          text: ''
+          simple_components: []
+        label: Text with heading
+        description:
+        icon: edit_note
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          simple_components:
+            type: array
+            options:
+              structures: _structures.simple_components
+            cascade: true
+      - value:
+          _bookshop_name: Left-right-block-component__image
+          image: ''
+        label: Image
+        description:
+        icon: image
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: Left-right-block-component__quote
+          text: Hello World!
+          author: Albert Einstein
+        label: Quote
+        description:
+        icon: format_quote
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: Left-right-block-component__heading-text
+          eyebrow: ''
+          title: Hello World!
+          text: ''
+          simple_components: []
+        label: Text with heading
+        description:
+        icon: edit_note
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          simple_components:
+            type: array
+            options:
+              structures: _structures.simple_components
+            cascade: true
+      - value:
+          _bookshop_name: Left-right-block-component__image
+          image: ''
+        label: Image
+        description:
+        icon: image
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: Left-right-block-component__quote
+          text: Hello World!
+          author: Albert Einstein
+        label: Quote
+        description:
+        icon: format_quote
+        tags: []
+        _inputs: {}
+  simple_components:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: button
+          content:
+            text: Hello World!
+          style:
+            colour: primary
+            size: large
+            disabled: false
+        label: Button
+        description:
+        icon: touch_app
+        tags: []
+        _inputs:
+          colour:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - primary
+                - secondary
+            comment: Choose either a primary or secondary colour scheme
+            cascade: true
+          size:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - small
+                - large
+            comment: Choose either a small or large button size
+            cascade: true
+      - value:
+          _bookshop_name: unordered-list
+          items:
+            - Item 1
+            - Item 2
+            - Item 3
+        label: List
+        description:
+        icon: format_list_bulleted
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: button
+          content:
+            text: Hello World!
+          style:
+            colour: primary
+            size: large
+            disabled: false
+        label: Button
+        description:
+        icon: touch_app
+        tags: []
+        _inputs:
+          colour:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - primary
+                - secondary
+            comment: Choose either a primary or secondary colour scheme
+            cascade: true
+          size:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - small
+                - large
+            comment: Choose either a small or large button size
+            cascade: true
+      - value:
+          _bookshop_name: unordered-list
+          items:
+            - Item 1
+            - Item 2
+            - Item 3
+        label: List
+        description:
+        icon: format_list_bulleted
+        tags: []
+        _inputs: {}
+  logo_component:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: logo
+          text: Hello World!
+          image: ''
+          alt: ''
+        label: Logo
+        description:
+        icon:
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: logo
+          text: Hello World!
+          image: ''
+          alt: ''
+        label: Logo
+        description:
+        icon:
+        tags: []
+        _inputs: {}
+  _bookshop_single_component_eftrightblockcomponentheadingtext:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: Left-right-block-component__heading-text
+          eyebrow: ''
+          title: Hello World!
+          text: ''
+          simple_components: []
+        label: Text with heading
+        description:
+        icon: edit_note
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          simple_components:
+            type: array
+            options:
+              structures: _structures.simple_components
+            cascade: true
+      - value:
+          _bookshop_name: Left-right-block-component__heading-text
+          eyebrow: ''
+          title: Hello World!
+          text: ''
+          simple_components: []
+        label: Text with heading
+        description:
+        icon: edit_note
+        tags: []
+        _inputs:
+          text:
+            type: textarea
+            cascade: true
+          simple_components:
+            type: array
+            options:
+              structures: _structures.simple_components
+            cascade: true
+  _bookshop_single_component_button:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: button
+          content:
+            text: Hello World!
+          style:
+            colour: primary
+            size: large
+            disabled: false
+        label: Button
+        description:
+        icon: touch_app
+        tags: []
+        _inputs:
+          colour:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - primary
+                - secondary
+            comment: Choose either a primary or secondary colour scheme
+            cascade: true
+          size:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - small
+                - large
+            comment: Choose either a small or large button size
+            cascade: true
+      - value:
+          _bookshop_name: button
+          content:
+            text: Hello World!
+          style:
+            colour: primary
+            size: large
+            disabled: false
+        label: Button
+        description:
+        icon: touch_app
+        tags: []
+        _inputs:
+          colour:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - primary
+                - secondary
+            comment: Choose either a primary or secondary colour scheme
+            cascade: true
+          size:
+            type: select
+            options:
+              allow_empty: true
+              values:
+                - small
+                - large
+            comment: Choose either a small or large button size
+            cascade: true
+  _bookshop_single_component_logo:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: logo
+          text: Hello World!
+          image: ''
+          alt: ''
+        label: Logo
+        description:
+        icon:
+        tags: []
+        _inputs: {}
+      - value:
+          _bookshop_name: logo
+          text: Hello World!
+          image: ''
+          alt: ''
+        label: Logo
+        description:
+        icon:
+        tags: []
+        _inputs: {}
+_editables: {}
+data_config: {}
+timezone: Pacific/Auckland
