@@ -15,7 +15,7 @@
         <p class="title">{{ .title }}</p>
         <div class="logos-row">
             {{ range first 5 $logos_array }}
-                {{ partial "bookshop" (slice "logo" $element) }}                
+                {{ partial "bookshop" (slice "logo" .) }}                
             {{ end }}
         </div>
     </div>
