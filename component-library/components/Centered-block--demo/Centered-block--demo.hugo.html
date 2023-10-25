@@ -16,7 +16,12 @@
 
             <div class="media-holder">
                 <div class="media elevation-medium">
-                    {{ if eq .use "media" }}
+                    {{/*  {{ if eq .use "media" }}  */}}
+                    {{ if strings.Contains .media "lottie" }}
+                        Lottie file
+                    {{ else if strings.Contains .media "wistia" }}
+                        Wistia video
+                    {{ else }}
                         {{ $media_ext = path.Ext .media }}
                         {{ if in $img_extensions $media_ext }}
                             <img src="{{ .media }}" />
@@ -25,10 +30,10 @@
                                 <source src="{{ .media }}">
                             </video>
                         {{ end }}                                        
-                    {{ else if eq .use "embed code" }}
-                        {{ if ne .embed_code "" }}
-                            {{ .embed_code | safeHTML }}
-                        {{ end }}                                                  
+                    {{/*  {{ else if eq .use "embed code" }}  */}}
+                        {{/*  {{ if ne .embed_code "" }}  */}}
+                            {{/*  {{ .embed_code | safeHTML }}  */}}
+                        {{/*  {{ end }}                                                    */}}
                     {{ end }}                    
                 </div>
             </div>
