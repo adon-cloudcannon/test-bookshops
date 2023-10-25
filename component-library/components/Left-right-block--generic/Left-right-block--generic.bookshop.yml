@@ -9,6 +9,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:  
+  background: "white"
   left: [bookshop:structure:left-right-block]
   left_cols: 5
   right: [bookshop:structure:left-right-block]
@@ -20,6 +21,12 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  background:
+    type: array
+    options:
+      values: 
+        - white
+        - grey
   left:
     type: array
   right:

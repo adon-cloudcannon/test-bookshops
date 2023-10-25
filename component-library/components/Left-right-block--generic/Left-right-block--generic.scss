@@ -1,11 +1,13 @@
 .c-Left-right-block--generic {
     --left-cols: 2; // default
     --right-cols: 2; // default
-    
-    background: var(--primary-grey-050);
+        
     min-width: 480px;
     display:grid;    
     grid-template-columns: var(--twelve-column-grid);
+
+    &__grey{ background: var(--primary-grey-050); }
+    &__white{ background: var(--core-white); }
 
     .content-wrapper{
         grid-column: 2 / 14;

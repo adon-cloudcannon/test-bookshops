@@ -1,6 +1,9 @@
 {{ $c := "c-Left-right-block--generic" }}
 
-<div class="{{ $c }}" style="--left-cols: {{ .left_cols }}; --right-cols: {{ .right_cols }}">
+<div class="{{ $c }} {{ c }}__{{ .background }}" style="
+    --left-cols: {{ .left_cols }}; 
+    --right-cols: {{ .right_cols }};
+    ">
     <div class="content-wrapper">
         
         {{ if .left }}
